@@ -9,4 +9,7 @@ params = {
 
 response = requests.get(url, params=params)
 
-pprint(response.json())
+if response.status_code == 200:
+    pprint(response.json())
+else:
+    print(f"Ошибка: {response.status_code}")
