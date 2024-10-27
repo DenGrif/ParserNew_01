@@ -1,0 +1,684 @@
+      <!DOCTYPE html>
+      <html lang="ru" class="vk vk_js_no vk_1x vk_flex_no r m h  vk_appAuth_no n vk_old  vk_schemes_no   "><head>
+          <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="MobileOptimized" content="176" />
+    <meta name="HandheldFriendly" content="True" />
+    <base id="base">
+    
+    <meta name="description" content="" />
+    <link rel="shortcut icon" href="/images/icons/favicons/fav_logo.ico?9"></link>
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/pwa/favicon_32.png?12">
+    <link rel="apple-touch-icon" href="/images/icons/pwa/apple/default.png?15">
+    <meta name="apple-mobile-web-app-title" content="ВКонтакте">
+    <meta name="application-name" content="ВКонтакте">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="theme-color" content="#ffffff">
+<meta name="color-scheme" content="light">
+    <title>ВКонтакте | ВКонтакте</title>
+          <meta http-equiv="origin-trial" content="AiJEtxZTdbmRu3zkrD0Bg/GvReuip5r0aklN7tIrw1Yit01/+j7PNlJFAyMMo/vqqNVvDmRsGCPGfVtNn5ookQ8AAABueyJvcmlnaW4iOiJodHRwczovL3ZrLmNvbTo0NDMiLCJmZWF0dXJlIjoiRG9jdW1lbnRQaWN0dXJlSW5QaWN0dXJlQVBJIiwiZXhwaXJ5IjoxNjk0MTMxMTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZX0=">
+    <script nomodule>window.nomodules = true;</script>
+    <script type="text/javascript">;/*challenge*/
+(function () {
+  'use strict';
+
+  // eslint-disable-next-line no-restricted-syntax
+  function challenge({ isEnabled }) {
+      if (!isEnabled) {
+          return;
+      }
+      let isRedirectRequested = false;
+      function redirect(target) {
+          if (!isRedirectRequested) {
+              isRedirectRequested = true;
+              window.location.href = target;
+          }
+      }
+      function getRedirectTarget(parameter) {
+          return `${parameter}=${encodeURIComponent(window.location.href)}`;
+      }
+      const observer = new PerformanceObserver((list)=>{
+          for (const entry of list.getEntries()){
+              if (entry.serverTiming) {
+                  for (const serverEntry of entry.serverTiming){
+                      if (serverEntry.name !== 'challenge') {
+                          return;
+                      }
+                      const { origin } = new URL(entry.name);
+                      redirect(origin + serverEntry.description + '?' + getRedirectTarget('back'));
+                  }
+              }
+          }
+      });
+      observer.observe({
+          entryTypes: [
+              'navigation',
+              'resource'
+          ]
+      });
+  }
+
+  return challenge;
+
+})()({"isEnabled":false});</script>
+    
+    <style>@font-face{font-family: 'VK Sans Display Faux';font-weight: 600;font-display: swap;src: url(/css/fonts/VKSansDisplayDemiBoldFaux.v100.woff2) format('woff2');unicode-range: U+0,U+A,U+D,U+20-5A,U+61-7A,U+401,U+404,U+406,U+407,U+40E,U+410-44F,U+451,U+454,U+456,U+457,U+45E,U+490,U+491;}@font-face{font-family: 'VK Sans Display';font-weight: 300;font-display: swap;src: url(/css/fonts/VKSansDisplayLightLatin.v320.woff2) format('woff2'), url(/css/fonts/VKSansDisplayLightLatin.v320.woff) format('woff');unicode-range: U+0,U+A,U+D,U+20-5F,U+61-7E,U+A0,U+A2-A5,U+A7,U+A9,U+AB,U+AD,U+AE,U+B0,U+B1,U+B6,U+B7,U+BB,U+D7,U+F7,U+131,U+237,U+2013,U+2014,U+2018,U+2019,U+201C,U+201D,U+2022,U+2026,U+2039,U+203A,U+20AC,U+20B4,U+20B8,U+20BD,U+20BF,U+2122,U+2191,U+2193,U+2212;}@font-face{font-family: 'VK Sans Display';font-weight: 300;font-display: swap;src: url(/css/fonts/VKSansDisplayLightCyrillic.v320.woff2) format('woff2'), url(/css/fonts/VKSansDisplayLightCyrillic.v320.woff) format('woff');unicode-range: U+401,U+404,U+406,U+407,U+40E,U+410-44F,U+451,U+454,U+456,U+457,U+45E,U+490,U+491,U+20B4,U+2116;}@font-face{font-family: 'VK Sans Display';font-weight: 300;font-display: swap;src: url(/css/fonts/VKSansDisplayLightRest.v320.woff2) format('woff2'), url(/css/fonts/VKSansDisplayLightRest.v320.woff) format('woff');unicode-range: U+307,U+308,U+2190,U+2192,U+2194-2199,U+2248,U+2260,U+2264,U+2265;}@font-face{font-family: 'VK Sans Display';font-weight: 400;font-display: swap;src: url(/css/fonts/VKSansDisplayRegularLatin.v320.woff2) format('woff2'), url(/css/fonts/VKSansDisplayRegularLatin.v320.woff) format('woff');unicode-range: U+0,U+A,U+D,U+20-5F,U+61-7E,U+A0,U+A2-A5,U+A7,U+A9,U+AB,U+AD,U+AE,U+B0,U+B1,U+B6,U+B7,U+BB,U+D7,U+F7,U+131,U+237,U+2013,U+2014,U+2018,U+2019,U+201C,U+201D,U+2022,U+2026,U+2039,U+203A,U+20AC,U+20B4,U+20B8,U+20BD,U+20BF,U+2122,U+2191,U+2193,U+2212;}@font-face{font-family: 'VK Sans Display';font-weight: 400;font-display: swap;src: url(/css/fonts/VKSansDisplayRegularCyrillic.v320.woff2) format('woff2'), url(/css/fonts/VKSansDisplayRegularCyrillic.v320.woff) format('woff');unicode-range: U+401,U+404,U+406,U+407,U+40E,U+410-44F,U+451,U+454,U+456,U+457,U+45E,U+490,U+491,U+20B4,U+2116;}@font-face{font-family: 'VK Sans Display';font-weight: 400;font-display: swap;src: url(/css/fonts/VKSansDisplayRegularRest.v320.woff2) format('woff2'), url(/css/fonts/VKSansDisplayRegularRest.v320.woff) format('woff');unicode-range: U+307,U+308,U+2190,U+2192,U+2194-2199,U+2248,U+2260,U+2264,U+2265;}@font-face{font-family: 'VK Sans Display';font-weight: 500;font-display: swap;src: url(/css/fonts/VKSansDisplayMediumLatin.v320.woff2) format('woff2'), url(/css/fonts/VKSansDisplayMediumLatin.v320.woff) format('woff');unicode-range: U+0,U+A,U+D,U+20-5F,U+61-7E,U+A0,U+A2-A5,U+A7,U+A9,U+AB,U+AD,U+AE,U+B0,U+B1,U+B6,U+B7,U+BB,U+D7,U+F7,U+131,U+237,U+2013,U+2014,U+2018,U+2019,U+201C,U+201D,U+2022,U+2026,U+2039,U+203A,U+20AC,U+20B4,U+20B8,U+20BD,U+20BF,U+2122,U+2191,U+2193,U+2212;}@font-face{font-family: 'VK Sans Display';font-weight: 500;font-display: swap;src: url(/css/fonts/VKSansDisplayMediumCyrillic.v320.woff2) format('woff2'), url(/css/fonts/VKSansDisplayMediumCyrillic.v320.woff) format('woff');unicode-range: U+401,U+404,U+406,U+407,U+40E,U+410-44F,U+451,U+454,U+456,U+457,U+45E,U+490,U+491,U+20B4,U+2116;}@font-face{font-family: 'VK Sans Display';font-weight: 500;font-display: swap;src: url(/css/fonts/VKSansDisplayMediumRest.v320.woff2) format('woff2'), url(/css/fonts/VKSansDisplayMediumRest.v320.woff) format('woff');unicode-range: U+307,U+308,U+2190,U+2192,U+2194-2199,U+2248,U+2260,U+2264,U+2265;}@font-face{font-family: 'VK Sans Display';font-weight: 600;font-display: swap;src: url(/css/fonts/VKSansDisplayDemiBoldLatin.v320.woff2) format('woff2'), url(/css/fonts/VKSansDisplayDemiBoldLatin.v320.woff) format('woff');unicode-range: U+0,U+A,U+D,U+20-5F,U+61-7E,U+A0,U+A2-A5,U+A7,U+A9,U+AB,U+AD,U+AE,U+B0,U+B1,U+B6,U+B7,U+BB,U+D7,U+F7,U+131,U+237,U+2013,U+2014,U+2018,U+2019,U+201C,U+201D,U+2022,U+2026,U+2039,U+203A,U+20AC,U+20B4,U+20B8,U+20BD,U+20BF,U+2122,U+2191,U+2193,U+2212;}@font-face{font-family: 'VK Sans Display';font-weight: 600;font-display: swap;src: url(/css/fonts/VKSansDisplayDemiBoldCyrillic.v320.woff2) format('woff2'), url(/css/fonts/VKSansDisplayDemiBoldCyrillic.v320.woff) format('woff');unicode-range: U+401,U+404,U+406,U+407,U+40E,U+410-44F,U+451,U+454,U+456,U+457,U+45E,U+490,U+491,U+20B4,U+2116;}@font-face{font-family: 'VK Sans Display';font-weight: 600;font-display: swap;src: url(/css/fonts/VKSansDisplayDemiBoldRest.v320.woff2) format('woff2'), url(/css/fonts/VKSansDisplayDemiBoldRest.v320.woff) format('woff');unicode-range: U+307,U+308,U+2190,U+2192,U+2194-2199,U+2248,U+2260,U+2264,U+2265;}@font-face{font-family: 'VK Sans Display';font-weight: 700;font-display: swap;src: url(/css/fonts/VKSansDisplayBoldLatin.v320.woff2) format('woff2'), url(/css/fonts/VKSansDisplayBoldLatin.v320.woff) format('woff');unicode-range: U+0,U+A,U+D,U+20-5F,U+61-7E,U+A0,U+A2-A5,U+A7,U+A9,U+AB,U+AD,U+AE,U+B0,U+B1,U+B6,U+B7,U+BB,U+D7,U+F7,U+131,U+237,U+2013,U+2014,U+2018,U+2019,U+201C,U+201D,U+2022,U+2026,U+2039,U+203A,U+20AC,U+20B4,U+20B8,U+20BD,U+20BF,U+2122,U+2191,U+2193,U+2212;}@font-face{font-family: 'VK Sans Display';font-weight: 700;font-display: swap;src: url(/css/fonts/VKSansDisplayBoldCyrillic.v320.woff2) format('woff2'), url(/css/fonts/VKSansDisplayBoldCyrillic.v320.woff) format('woff');unicode-range: U+401,U+404,U+406,U+407,U+40E,U+410-44F,U+451,U+454,U+456,U+457,U+45E,U+490,U+491,U+20B4,U+2116;}@font-face{font-family: 'VK Sans Display';font-weight: 700;font-display: swap;src: url(/css/fonts/VKSansDisplayBoldRest.v320.woff2) format('woff2'), url(/css/fonts/VKSansDisplayBoldRest.v320.woff) format('woff');unicode-range: U+307,U+308,U+2190,U+2192,U+2194-2199,U+2248,U+2260,U+2264,U+2265;}:root{--vk-sans-display:'VK Sans Display', var(--vkui--font_family_fallbacks);}:root,[scheme=bright_light]{--vkui--color_text_secondary:#818c99;--vkui--color_background_content:#ffffff;--vkui--color_text_primary:#000000;--vkui--font_family_fallbacks:-apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif;}[scheme=space_gray]{--vkui--color_text_secondary:#76787a;--vkui--color_background_content:#19191a;--vkui--color_text_primary:#e1e3e6;}:root{--semibold-font-weight:600;--base-fonts:-apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Segoe WP', 'Helvetica Neue', 'Lucida Grande', Verdana, Tahoma, Arial, sans-serif;--regular-font-weight:400;}:root{--content_area_height:calc(100vh - 96px);--content_header_height:56px;--content_tabbar_height:48px;--content_sticky_elements_height:0px;}@media (max-width:881px){.vk_tabbar_bottom{--content_area_height:calc(100vh - var(--content_header_height) - var(--content_tabbar_height) - var(--content_sticky_elements_height));}}body.bad_browser_page_fast_reload{margin:0;padding:0;}.BadBrowser{background-color:var(--vkui--color_background_content);box-sizing:border-box;font-family:var(--base-fonts);display:table;padding:24px 12px;text-align:center;margin:0 auto;max-width:620px;min-height:var(--content_area_height);}.BadBrowser__content{display:table-cell;vertical-align:middle;}.BadBrowser__title{color:var(--vkui--color_text_primary);font-weight:var(--semibold-font-weight);font-size:20px;line-height:24px;font-family:var(--vk-sans-display);}.BadBrowser__text{color:var(--vkui--color_text_secondary);font-weight:var(--regular-font-weight);font-size:16px;line-height:20px;margin:8px 0 0 0;}.BadBrowser__browsers{padding-top:48px;}.BadBrowser__browsersTable{display:table;width:100%;}.BadBrowser__browsersTableCell{display:table-cell;}.BadBrowserHeader{box-sizing:border-box;position:relative;padding:12px;height:var(--content_header_height);width:100%;z-index:1;}.BadBrowserHeader__inner{margin:0 auto;max-width:620px;width:100%;}.BadBrowserHeader__logo{display:inline-block;vertical-align:middle;}.Browser{background-color:transparent;border:0;color:var(--vkui--color_text_primary);cursor:pointer;display:block;font-size:15px;line-height:20px;padding:0;text-align:center;text-decoration:none;width:100%;}.Browser__title{margin:12px 0 0;}:root{--vk-sans-display:'VK Sans Display', 'VK Sans Display Faux', var(--base-fonts);}</style>
+    <script>
+      (function() {
+        window.vk = {"id":0,"age":0,"pabs":254,"__debug":false,"__atest":false,"__dev":false,"__domain":"vk.com","wsTransport":"https:\/\/stats.vk-portal.net","statsMeta":{"platform":"mvk","st":false,"time":1729815173,"hash":"1ZPyrtkJrglmgXQQ5GY6ubBtXAbFtM6eA7CtUzpSuXc","reloadVersion":27},"tnsPixelType":"unauth","tnsPixelSocdem":"13","main_platform":"mvk","platform":"mvk","apiConfigDomains":{"apiDomain":"api.vk.com","loginDomain":"login.vk.com","connectDomain":"id.vk.com"},"logoutUrl":"https:\/\/login.vk.com\/?act=logout_mobile&hash=b9be329b5e79104cdf&_origin=https%3A%2F%2Fm.vk.com&reason=tn&lrt=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU","selectorsToCheck":[],"isCallsDevEnv":false,"preloadTabbarStaticConfig":{"feed":["profile_redesign.js","group_redesign.js","video.js","video_showcase.js","short_video.js","mail.js"],"video":["feed.js","stories_feed_block.js","mail.js","short_video.js"],"mail":["feed.js","stories_feed_block.js","video.js","video_showcase.js","short_video.js"],"clips":["feed.js","stories_feed_block.js","mail.js","video.js","video_showcase.js"]},"rv":"119036","ts":1729815173,"sw":null,"static":{"js_stage":1,"css_stage":1,"flushed_entries":[],"domain":"https:\/\/st7-23.vk.com","nav_map":{"^\\\/join":["join.js","join.css"],"promocode(\\\/([0-9a-zA-Z-]+))?":["promocode.js","promocode.css"],"^\\\/audio":["audio.js"],"^\\\/video":["video.css","video.js","mail.css"],"^\\\/clip":["ShortVideoPage.css","short_videos_page.css","short_video.js","mail.css"],"^\\\/(photo|album|tag|attachments|market|uslugi)":["photo.css","mail.css","photoview.js","photo.js"],"^\\\/(wall|mail|write|im|chatjoin)":["mail.css","wall.css"],"settings\\?act=money_transfer_history":["money_transfer_history.js","money_transfer_history.css"],"^\\\/settings":["settings.js","settings.css"],"settings\\?act=business_notify":["business_notify_settings.js","business_notify_settings.css"],"reports\\?act=":["reports.css"],"^\\\/(blog|about|press|jobs|products|adv)":["blog.css","blog.js","mail.css"],"^\\\/(product|cart|cart_order|orders|market\\.php)(\\??[0-9a-zA-Z=_-]+)?":["market.js","market.css"],"^\\\/(reviews)":["market.js","market.css","photo.css"],"^\\\/(vkcrowdsource)":["crowdsource.js","crowdsource.css"],"^\\\/groups_catalog\\\/([0-9a-zA-Z_\\-]+)$":["groups_catalog.js"],"z=(story|narrative)(-?\\d+_\\d+)":["stories.css","stories.js"],"z=photo(-?\\d+_\\d+)":["photo.js"]},"assets":{"addresses_list.css":["addresses_list.1544e17f0902207009ff.css"],"apps_stub_redesigned.css":["apps_stub_redesigned.19912ce26f1a41a7200b.css"],"apps_stub.css":["apps_stub.5b424314dcd3eb1e0cdc.css"],"apps.css":["apps.c3035cdead987c9d1973.css"],"article_common.css":["article_common.bb334a513387b818eddf.css"],"article.css":["article.a6e948ee9bbb9cf4612e.css"],"AttachmentSkeletons.css":["AttachmentSkeletons.dd544d2bf5ade5980242.css"],"audio_player_bottom.css":["audio_player_bottom.d5e6679b89aeae51e27a.css"],"audio_player_mini.css":["audio_player_mini.a019ce4e91c18f2d4608.css"],"audio.css":["audio.6abf47b255ab46e76cde.css"],"author_page.css":["author_page.0a2d0ee6d9364e38721e.css"],"away.css":["away.fa1fd3ea233dc4d471b5.css"],"BadBrowser.css":["BadBrowser.f08dd9fb248c03fed1d1.css"],"blog.css":["blog.da535028af0156fea866.css"],"bookmarks.css":["bookmarks.13dab899f70194f589c9.css"],"BookmarksApps.css":["BookmarksApps.934cacc0cd94e81687e9.css"],"business_notify_settings.css":["business_notify_settings.3f1b8a3964ef0e151545.css"],"calls.css":["calls.b2a02e9258f1688fb15b.css"],"CarouselSkeleton.css":["CarouselSkeleton.7d354bc672a9b7d904ce.css"],"common.css":["common.ff8a167247e7aff0721c.css"],"crowdsource.css":["crowdsource.23b67a8a970b2966fbc0.css"],"feed.css":["feed.07d2c0e7ccf72c167aad.css"],"FeedBlockWrap.css":["FeedBlockWrap.1b05ee8fec564f9d3295.css"],"fonts_stories_new_avatar_story.css":["fonts_stories_new_avatar_story.efd296c6aeb1647a0e5b.css"],"fonts.css":["fonts.fb9f1910d4618183f000.css"],"friends.css":["friends.b81a35ee3b650c41dca8.css"],"GameInstallScreen.css":["GameInstallScreen.572cd9ab07febb53e0f0.css"],"group_redesign_name_history.css":["group_redesign_name_history.ea2d0651902d7df67c38.css"],"group_redesign.css":["group_redesign.99f49f498e5e6ae9f7db.css"],"group.css":["group.2398dd42099d7ffccdc4.css"],"groups_list.css":["groups_list.ff7a49b795b261bffb61.css"],"HiddenPostBlank.css":["HiddenPostBlank.b4ae79c8b9e9a574a668.css"],"inline_icons_migration.css":["inline_icons_migration.c1079600e28be904a459.css"],"join.css":["join.3374144bb321a2c8320b.css"],"legacy.css":["legacy.6b5b7e2544ed9dc544a4.css"],"like_publish.css":["like_publish.b4f13c4f6d8f6946395d.css"],"login_block_reason.css":["login_block_reason.e9d52aeb702106b37f35.css"],"login.css":["login.b904bc80f683c49fba98.css"],"mail.css":["mail.e57335fc06f3cffae205.css"],"market.css":["market.e55e2207368bd1c0abd5.css"],"mini_apps_catalog.css":["mini_apps_catalog.5125e3218d1cae6a1c01.css"],"money_transfer_history.css":["money_transfer_history.d8d05915bbeabc7025a7.css"],"narratives.css":["narratives.33a4f2dc6e415f05b51c.css"],"notifications.css":["notifications.f18544bbc8cb79fb2478.css"],"oauth_android.css":["oauth_android.0fc30fcb5e5758c7ad44.css"],"oauth_base.css":["oauth_base.7e2be2e12f035225a29f.css"],"oauth_ios.css":["oauth_ios.ef481b4ce68811d43080.css"],"oauth_winmobile.css":["oauth_winmobile.d44cfd74f84002995a5f.css"],"onboarding_screen_download_app.css":["onboarding_screen_download_app.4e9cc0501bb80599ab46.css"],"onboarding_screen_recom_themes.css":["onboarding_screen_recom_themes.ea04d9f89d833b1b1ab7.css"],"owner_cover_upload.css":["owner_cover_upload.a492de7c19fadb56c06e.css"],"owner_photo_upload.css":["owner_photo_upload.2c36688a3027a4b3efa0.css"],"page_bottom_banners.css":["page_bottom_banners.86789e932e625876d1e2.css"],"payments.css":["payments.61622c88b990b6e6e3d6.css"],"personal_discount.css":["personal_discount.53240101bf10f084a7f8.css"],"photo.css":["photo.d713ce5141c7734c21d8.css"],"podcasts.css":["podcasts.e8716fb314e500b9411e.css"],"posting_redesign.css":["posting_redesign.743b5273b3d1746499df.css"],"profile_edit.css":["profile_edit.b3fef7fe9dc3c90e9d01.css"],"profile_redesign.css":["profile_redesign.e746b5f82ff33ce870fd.css"],"profile.css":["profile.b41f2071e7bd53bf5f4c.css"],"promocode.css":["promocode.6c3be67003bda7c37b9c.css"],"PWAInstallGuide.css":["PWAInstallGuide.8a32784f178c0d55f78f.css"],"reactions.css":["reactions.3fcf5cbe67464158bc06.css"],"RecommendationSkeleton.css":["RecommendationSkeleton.e069e3e74846271d11e0.css"],"reports.css":["reports.b901c36c8960c27b3c38.css"],"search.css":["search.45fe45ccba4af1a46d19.css"],"settings.css":["settings.fb8236422b2412ab63b6.css"],"short_videos_page.css":["short_videos_page.bae555b147c41372ab2a.css"],"ShortVideoPage.css":["ShortVideoPage.caec49e98dac95485277.css"],"ShortVideosPage.css":["ShortVideosPage.bae555b147c41372ab2a.css"],"special.css":["special.f6fffc1006f930dcb364.css"],"stories.css":["stories.4b5678a3bd65c592799e.css"],"textlives.css":["textlives.773e7b0140f1b00cf1db.css"],"thumbnail_creator.css":["thumbnail_creator.133a48001d9da1f25a99.css"],"ugc_sticker.css":["ugc_sticker.2e8f40678a2f4062f8ae.css"],"unauthorized_search.css":["unauthorized_search.89d8f76df71c0fdc8b09.css"],"unauthorized.css":["unauthorized.9956e22c4702bc9562c5.css"],"universal_widget.css":["universal_widget.33a79eadb4f6aa53b78f.css"],"uxpolls.css":["uxpolls.38e6d6e44ab742224143.css"],"variables.css":["variables.63187e71fcaf4898c374.css"],"video.css":["video.fe220ee98c38f3736871.css"],"vk_connect.css":["vk_connect.bcad410120be139577d1.css"],"vk_sans_display_faux_inline.css":["vk_sans_display_faux_inline.dfe5379d7a1ccdff6d8a.css"],"vk_sans_display_faux.css":["vk_sans_display_faux.7709f6cb23b51d5ed980.css"],"vk_sans_display.css":["vk_sans_display.9f9256a15167150e20bd.css"],"vkui.css":["vkui.c224fdf0e6b6857fb489.css"],"wall.css":["wall.5c1d389fdea2c7f0aa54.css"],"webview.css":["webview.995627924ba9c03a3d10.css"],"internal\/debugLog.css":["internal\/debugLog.7908c4d9f646b2a1a59f.css"],"internal\/debugLog.js":["internal\/debugLog.a2e2f2c36d9837e4fc1f.js"],"internal\/debugMenu.js":["vendors~icons.ee7cc5d057a4ece695a3.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","internal\/debugMenu.3d0e024de51e8f20f4f2.css","internal\/debugMenu.1f1d4bea86ed10b51f10.js"],"internal\/deploymentsTestTool.js":["vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","internal\/deploymentsTestTool.4f700d3d85474937a684.js"],"app_action_snippet.js":["app_action_snippet.b43fb3657fffe2220286.css","app_action_snippet.563fa5b962a62848d4b7.js"],"app_slides_sheet.js":["vendors~icons.ee7cc5d057a4ece695a3.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","app_slides_sheet.4f0eed8a161526d721fb.js"],"apple_viewport_bug_demo.js":["apple_viewport_bug_demo.7c429f8f6cd78b4ba948.js"],"apps_attach_catalog.js":["vendors~icons.ee7cc5d057a4ece695a3.js","vendors.efdfbf0ddb12cf2592b4.js","vendors~vk.32d66df2733d425ee922.js","vendors~runtime.abd333fccd862f8b0ab9.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","apps_attach_catalog.5592b108f48fb5a0a89e.css","apps_attach_catalog.42fbf6a8a15a0e0c4077.js"],"apps_connect.js":["vendors~icons.ee7cc5d057a4ece695a3.js","vendors.efdfbf0ddb12cf2592b4.js","vendors~api.b279005beb188f707276.js","vendors~vk.32d66df2733d425ee922.js","vendors~vkjs.340a919cd27e60df5f77.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","b-c0e0d1ac6bdd3fbced37953f83562c64.266cdd0f81eaa22601ca.js","b-4c7b62ed738db3023812353787795139.dfc3592d93984f3cb24f.js","b-24f7dec4f3fcd04e26684c3903ba6065.4c45a857641b19350bc1.js","b-25a239a31c88d972ace40ddc3bc69eb6.36be4a9c5043a71054c2.js","b-5564c4910055ef89dd86a5925a6657f3.5d0a854d9d7cb9943813.js","apps_connect.de7e26ddf890bfecb22e.css","apps_connect.906efff7f9bce5c974c1.js"],"apps_personal_discount.js":["vendors~icons.ee7cc5d057a4ece695a3.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","apps_personal_discount.3eb15f801a64062686da.css","apps_personal_discount.f85657985d3b9be2c5ae.js"],"apps_stub_redesigned.js":["vendors~icons.ee7cc5d057a4ece695a3.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","apps_stub_redesigned.d971cbebae6073b5963f.css","apps_stub_redesigned.7c534f1c22b13767c3ef.js"],"apps_stub.js":["vendors~icons.ee7cc5d057a4ece695a3.js","vendors.efdfbf0ddb12cf2592b4.js","vendors~api.b279005beb188f707276.js","vendors~vk.32d66df2733d425ee922.js","vendors~effector.b5340cb672ed7feca413.js","vendors~vkjs.340a919cd27e60df5f77.js","vendors~runtime.abd333fccd862f8b0ab9.js","vendors~vkui.3461beece63b8ceefd06.js","vendors~onlyReact.be887b2656f05b5721cd.js","nav.631bac9af650d88ccf85.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","b-a41188998107cca6039611589eda801a.f3c73e962eebb3217638.js","b-c3fa4b5cf3d22bcc8f8a9a9e5f6a961c.6bc0a49ffe0ccf7205ef.js","b-c2101f988be28e5dd4bc34283f6b2c1f.c77c5e2fc5922913a24b.js","b-9069917d425301359d47b82c032a881a.ac9cec52c64b28ab9d37.js","b-6423050665d0d1f604843456a7021555.4130172a74ac6ea78944.js","apps_stub.de057cc13e349c14ba97.css","apps_stub.0113d259db6777f85e5d.js"],"apps.js":["vendors~icons.ee7cc5d057a4ece695a3.js","vendors.efdfbf0ddb12cf2592b4.js","vendors~api.b279005beb188f707276.js","vendors~vk.32d66df2733d425ee922.js","vendors~effector.b5340cb672ed7feca413.js","vendors~vkjs.340a919cd27e60df5f77.js","vendors~reactUtils.21190b61010641d7361f.js","vendors~runtime.abd333fccd862f8b0ab9.js","vendors~videoplayer.9ff9d07b12cc9ac049e7.js","vendors~videoplayer-interactive.d6c6a89dbfe1e483b015.js","vendors~draggable.7128aa656293aad005a4.js","vendors~vkui.3461beece63b8ceefd06.js","vendors~onlyReact.be887b2656f05b5721cd.js","vendors~qr.5938e060b7e3c0cedd3a.js","nav.631bac9af650d88ccf85.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","sticker-lib.59eb7d57c3d02aba2d14.css","sticker-lib.8fbb58d1a2069cea7ec9.js","b-32a4f924ef5b70925bf438593deaa5a7.0e619e925560463e10b1.js","b-078c5f830a3251daf8b69af42a5b7074.cdb63138683169671654.js","b-429e76ab4b0c05c50055d8dfd14f054f.2e2c26a3a6c973072bce.js","b-a23a659b9c76118f9d742ef7371a6233.7a109bf10f281133b62d.js","b-b0988e601fbadddb5ab450b9c1d5c37e.a697ebacc5526dcbc9ce.js","b-95e5eff0481cff4b9e6d3ddb574fa482.9100511837ca28e4e26a.js","b-34e71f9d847d3748ac028e1b133fbbb8.50074c657608b0e74860.js","b-b641cee90a436391b67e1b9ed9561ff7.82d8a679bcb356e72830.js","b-dca2e2779a989f010efa5e05362e7eb6.b0417ef8667953c23904.js","b-c105976aba685de80ba3d686c87d619c.7d2a97e3be5ed5646b1a.css","b-c105976aba685de80ba3d686c87d619c.f395dd3e96399b2c1c43.js","b-aa5f682223328d49abc9046a2d105e6b.ed76adccfc148e59b14d.js","b-870cc56e7290633b420b14b50db70c5c.e97c214d31f3154a31bb.js","b-953fa09620ce482fb3b83a029db6ea9c.01675dfc161a82a33911.js","b-699869767d91a890beecf25cdab6e320.46e84fe4750a06888faa.js","b-07f1f52559ac2edce449c749e2d35c3f.16228eea04ff8a1eabfc.js","b-692889c4762adea28a12088b6c271e4c.0de7d03fcc7dd294d848.js","b-afa6c8956d6f19f8a7cf9ecf2abd3433.14294d29c124bae50081.js","b-2d87d958843f1b15b7cb8191aedfb58d.8a82b3bb13b29d3e6a78.js","b-c0e0d1ac6bdd3fbced37953f83562c64.266cdd0f81eaa22601ca.js","b-4c7b62ed738db3023812353787795139.dfc3592d93984f3cb24f.js","b-24f7dec4f3fcd04e26684c3903ba6065.4c45a857641b19350bc1.js","b-25a239a31c88d972ace40ddc3bc69eb6.36be4a9c5043a71054c2.js","b-5564c4910055ef89dd86a5925a6657f3.5d0a854d9d7cb9943813.js","b-a41188998107cca6039611589eda801a.f3c73e962eebb3217638.js","b-46c310999fd110a9a47f227ac880d92f.01e43049fa630edc4499.js","b-c3fa4b5cf3d22bcc8f8a9a9e5f6a961c.6bc0a49ffe0ccf7205ef.js","b-c2101f988be28e5dd4bc34283f6b2c1f.c77c5e2fc5922913a24b.js","b-07092d36b87a9154130c3963f0f52e26.0b23a45e31c99991454f.css","b-6d33e8a84c1bea37e4edb45228773ec0.8437b2f777e0ec2f7aff.js","b-9069917d425301359d47b82c032a881a.ac9cec52c64b28ab9d37.js","b-6423050665d0d1f604843456a7021555.4130172a74ac6ea78944.js","b-5a7c90e185cf28b511683411649a6454.1f9e3fac118065be1e91.js","b-ada49380209bcd80ac0c3dde9fae3d6f.84959568e6fe14c8aa6e.js","b-8b02aa66b9b081529c8312f480fda84b.1d933d268c973dd0b702.js","b-497eee843e8572661eae92ebbdce1210.1553f539072acf10bc17.js","b-151325465854b07b898b35636ace6dc4.bcfe98d563c0b3ac5f5f.js","apps.cb8c200864388c887bf1.css","apps.ec66ce029900bea233ec.js"],"article_standalone.js":["vendors~icons.ee7cc5d057a4ece695a3.js","vendors.efdfbf0ddb12cf2592b4.js","vendors~api.b279005beb188f707276.js","vendors~vk.32d66df2733d425ee922.js","vendors~effector.b5340cb672ed7feca413.js","vendors~vkjs.340a919cd27e60df5f77.js","vendors~runtime.abd333fccd862f8b0ab9.js","vendors~videoplayer.9ff9d07b12cc9ac049e7.js","vendors~videoplayer-interactive.d6c6a89dbfe1e483b015.js","vendors~vkui.3461beece63b8ceefd06.js","vendors~onlyReact.be887b2656f05b5721cd.js","nav.631bac9af650d88ccf85.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","b-e2450563824553bf3538e585cb9152b0.100ec9b05f5e06cb83c6.js","b-a41188998107cca6039611589eda801a.f3c73e962eebb3217638.js","b-c3fa4b5cf3d22bcc8f8a9a9e5f6a961c.6bc0a49ffe0ccf7205ef.js","b-c2101f988be28e5dd4bc34283f6b2c1f.c77c5e2fc5922913a24b.js","b-cc6f0a54b685f3ffae1c1566df0cb25c.45a4907df1ff2df62dd5.js","b-4340b32948abde9e82d871c7fb24ae10.e0588bc48aa595c0f691.js","b-787b92c166e57688b9db0bbf6b775c2f.4ac7593260cd9825e4ff.js","article_standalone.de057cc13e349c14ba97.css","article_standalone.b5824c7150a9cdbf7f53.js"],"article.js":["vendors~icons.ee7cc5d057a4ece695a3.js","vendors.efdfbf0ddb12cf2592b4.js","vendors~videoplayer.9ff9d07b12cc9ac049e7.js","vendors~videoplayer-interactive.d6c6a89dbfe1e483b015.js","vendors~vkui.3461beece63b8ceefd06.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","b-e2450563824553bf3538e585cb9152b0.100ec9b05f5e06cb83c6.js","b-cc6f0a54b685f3ffae1c1566df0cb25c.45a4907df1ff2df62dd5.js","b-4340b32948abde9e82d871c7fb24ae10.e0588bc48aa595c0f691.js","article.bb256093ab9f80b5f295.js"],"audio_catalog.js":["vendors~icons.ee7cc5d057a4ece695a3.js","vendors.efdfbf0ddb12cf2592b4.js","vendors~api.b279005beb188f707276.js","vendors~vk.32d66df2733d425ee922.js","vendors~effector.b5340cb672ed7feca413.js","vendors~reactUtils.21190b61010641d7361f.js","vendors~runtime.abd333fccd862f8b0ab9.js","vendors~draggable.7128aa656293aad005a4.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","b-32a4f924ef5b70925bf438593deaa5a7.0e619e925560463e10b1.js","b-078c5f830a3251daf8b69af42a5b7074.cdb63138683169671654.js","b-b0988e601fbadddb5ab450b9c1d5c37e.a697ebacc5526dcbc9ce.js","b-c105976aba685de80ba3d686c87d619c.7d2a97e3be5ed5646b1a.css","b-c105976aba685de80ba3d686c87d619c.f395dd3e96399b2c1c43.js","b-953fa09620ce482fb3b83a029db6ea9c.01675dfc161a82a33911.js","b-07f1f52559ac2edce449c749e2d35c3f.16228eea04ff8a1eabfc.js","audio_catalog.9b175dc066e713ccbbc1.css","audio_catalog.ebe49f47334608a13500.js"],"audio_player_bottom.js":["audio_player_bottom.07683852b3f8a16176df.js"],"audio_player_mini.js":["audio_player_mini.ecad3b6eb76af802d757.js"],"audio_searcher.js":["b-0ee09d95d7aaf96f458d656f2c765130.8c1c796eddd0a32bbd87.js","audio_searcher.ac2f3d83130c463f25a2.js"],"audio.js":["vendors.efdfbf0ddb12cf2592b4.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","b-429e76ab4b0c05c50055d8dfd14f054f.2e2c26a3a6c973072bce.js","b-a23a659b9c76118f9d742ef7371a6233.7a109bf10f281133b62d.js","b-e2450563824553bf3538e585cb9152b0.100ec9b05f5e06cb83c6.js","b-0ee09d95d7aaf96f458d656f2c765130.8c1c796eddd0a32bbd87.js","b-c5963d0937bdf77bfc837270b513b797.174c0975ff83c4478d3e.js","b-2e536b6ac412242dbf14439fb0657d8b.8504660b2b8c79bbb0de.js","audio.fc8c7740fa19a42a6dd5.css","audio.c5afcdf3044c0ce67303.js"],"author_likes_onboarding.js":["author_likes_onboarding.79d898460c2b9a3dacdd.js"],"banned_tutorial.js":["banned_tutorial.e39a4ffab224ebdc1edd.js"],"banned.js":["banned.5ee28811582df9bf9c9b.js"],"best_friends.js":["b-b560a386204e7abe3de81e7cbf5c8a53.1edfe7c38b3786c22c2b.js","best_friends.e1c2dfac333f7dbeba26.js"],"block_friends_recommendation_march_2023.js":["vendors~icons.ee7cc5d057a4ece695a3.js","vendors~api.b279005beb188f707276.js","vendors~reactUtils.21190b61010641d7361f.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","b-6a8902acfba71caaeb203689482ef491.ed9f10846756462ec21e.js","b-7cd04e4681aa6f00b1482dda9ebff131.fecf3d9af9ab2e81d329.js","b-dc5284ac517c28fc531c0ddf89d66185.e4ae6430b6839d64d066.js","block_friends_recommendation_march_2023.506efa394472060cba51.css","block_friends_recommendation_march_2023.2621666caaf1c57da300.js"],"block_good_authors_may_2023.js":["vendors~icons.ee7cc5d057a4ece695a3.js","vendors~api.b279005beb188f707276.js","vendors~reactUtils.21190b61010641d7361f.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","b-6a8902acfba71caaeb203689482ef491.ed9f10846756462ec21e.js","b-7cd04e4681aa6f00b1482dda9ebff131.fecf3d9af9ab2e81d329.js","b-dc5284ac517c28fc531c0ddf89d66185.e4ae6430b6839d64d066.js","block_good_authors_may_2023.506efa394472060cba51.css","block_good_authors_may_2023.94475a67807387fc8c40.js"],"blog.js":["blog.b22ac6e6e68b227463f9.js"],"bridge_modals.js":["vendors~icons.ee7cc5d057a4ece695a3.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","b-24f7dec4f3fcd04e26684c3903ba6065.4c45a857641b19350bc1.js","bridge_modals.1506ea784edeae3aca34.css","bridge_modals.cd647bcef4a13cef044e.js"],"business_notify_settings.js":["business_notify_settings.04ff59f92776abf5cca6.js"],"calls.js":["vendors.efdfbf0ddb12cf2592b4.js","vendors~vk.32d66df2733d425ee922.js","vendors~effector.b5340cb672ed7feca413.js","vendors~vkjs.340a919cd27e60df5f77.js","vendors~reactUtils.21190b61010641d7361f.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","b-aa5f682223328d49abc9046a2d105e6b.ed76adccfc148e59b14d.js","b-4c23ffbba23dd73be0f7b7974f6d7056.71b9f23915e4ce82c2ed.js","calls.881a65796082549cbd48.js"],"chat_photo_upload.js":["chat_photo_upload.ee2be88b1fa172a43d8e.js"],"check_validation_phone.js":["vendors.efdfbf0ddb12cf2592b4.js","vendors~vk.32d66df2733d425ee922.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","check_validation_phone.3384280dfd61d1b80779.css","check_validation_phone.41377d4860254d5d6e81.js"],"coauthor_invite.js":["vendors~icons.ee7cc5d057a4ece695a3.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","coauthor_invite.51e3c42f7454c37f5a85.js"],"common.js":["runtime.72f8f6de6031696b6f6c.js","vendors~icons.ee7cc5d057a4ece695a3.js","vendors.efdfbf0ddb12cf2592b4.js","vendors~api.b279005beb188f707276.js","vendors~vk.32d66df2733d425ee922.js","vendors~effector.b5340cb672ed7feca413.js","vendors~vkjs.340a919cd27e60df5f77.js","vendors~runtime.abd333fccd862f8b0ab9.js","vendors~vkui.3461beece63b8ceefd06.js","vendors~onlyReact.be887b2656f05b5721cd.js","vendors~sentry.203e7b566ef4abf59702.js","vendors~qr.5938e060b7e3c0cedd3a.js","vendors~eventemitter.f79c689caa23f8c556a6.js","nav.631bac9af650d88ccf85.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","b-a41188998107cca6039611589eda801a.f3c73e962eebb3217638.js","b-c3fa4b5cf3d22bcc8f8a9a9e5f6a961c.6bc0a49ffe0ccf7205ef.js","b-c2101f988be28e5dd4bc34283f6b2c1f.c77c5e2fc5922913a24b.js","b-6d33e8a84c1bea37e4edb45228773ec0.8437b2f777e0ec2f7aff.js","b-9069917d425301359d47b82c032a881a.ac9cec52c64b28ab9d37.js","b-077bca6f491ed9ece107680a7718b4db.a117d4e205c06b69b7e3.js","b-6423050665d0d1f604843456a7021555.4130172a74ac6ea78944.js","b-5a7c90e185cf28b511683411649a6454.1f9e3fac118065be1e91.js","b-5b00aea572e45c70bbebccd522bc0f0e.6da97a374bc5c386d54b.js","b-ceaa9315a32960f26bfe1bd3f4da9134.d0ca48a36299e376332e.js","b-151325465854b07b898b35636ace6dc4.bcfe98d563c0b3ac5f5f.js","b-787b92c166e57688b9db0bbf6b775c2f.4ac7593260cd9825e4ff.js","common.bcb4abd85fef693393fe.css","common.677e3cbcf9ca942cad9b.js"],"communities_catalog.js":["vendors~icons.ee7cc5d057a4ece695a3.js","vendors.efdfbf0ddb12cf2592b4.js","vendors~api.b279005beb188f707276.js","vendors~vk.32d66df2733d425ee922.js","vendors~effector.b5340cb672ed7feca413.js","vendors~reactUtils.21190b61010641d7361f.js","vendors~runtime.abd333fccd862f8b0ab9.js","vendors~draggable.7128aa656293aad005a4.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","b-32a4f924ef5b70925bf438593deaa5a7.0e619e925560463e10b1.js","b-078c5f830a3251daf8b69af42a5b7074.cdb63138683169671654.js","b-b0988e601fbadddb5ab450b9c1d5c37e.a697ebacc5526dcbc9ce.js","b-c105976aba685de80ba3d686c87d619c.7d2a97e3be5ed5646b1a.css","b-c105976aba685de80ba3d686c87d619c.f395dd3e96399b2c1c43.js","b-953fa09620ce482fb3b83a029db6ea9c.01675dfc161a82a33911.js","b-07f1f52559ac2edce449c749e2d35c3f.16228eea04ff8a1eabfc.js","communities_catalog.9b175dc066e713ccbbc1.css","communities_catalog.860d990d4591df2f7164.js"],"communities_showcase.js":["vendors~icons.ee7cc5d057a4ece695a3.js","vendors.efdfbf0ddb12cf2592b4.js","vendors~api.b279005beb188f707276.js","vendors~vk.32d66df2733d425ee922.js","vendors~effector.b5340cb672ed7feca413.js","vendors~reactUtils.21190b61010641d7361f.js","vendors~runtime.abd333fccd862f8b0ab9.js","vendors~draggable.7128aa656293aad005a4.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","b-32a4f924ef5b70925bf438593deaa5a7.0e619e925560463e10b1.js","b-078c5f830a3251daf8b69af42a5b7074.cdb63138683169671654.js","b-b0988e601fbadddb5ab450b9c1d5c37e.a697ebacc5526dcbc9ce.js","b-c105976aba685de80ba3d686c87d619c.7d2a97e3be5ed5646b1a.css","b-c105976aba685de80ba3d686c87d619c.f395dd3e96399b2c1c43.js","b-953fa09620ce482fb3b83a029db6ea9c.01675dfc161a82a33911.js","b-07f1f52559ac2edce449c749e2d35c3f.16228eea04ff8a1eabfc.js","communities_showcase.9b175dc066e713ccbbc1.css","communities_showcase.4a1ce4cc3b16f68eb031.js"],"connect.js":["vendors.efdfbf0ddb12cf2592b4.js","vendors~vk.32d66df2733d425ee922.js","connect.70208cab073f9bfe1e25.js"],"cookie_banner.js":["cookie_banner.024704398837dcede412.js"],"crowdsource.js":["vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","crowdsource.406f85c3b61d80629d2d.css","crowdsource.c26bc9c5fa4c146318cf.js"],"easter_eggs.js":["easter_eggs.c79e08c4be09bbd0f184.js"],"ecomm_admin_tips.js":["vendors~effector.b5340cb672ed7feca413.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","ecomm_admin_tips.15c55a1fb6cce70dc496.css","ecomm_admin_tips.2612d5ee042b87e602a8.js"],"ecomm_community_reviews.js":["vendors~icons.ee7cc5d057a4ece695a3.js","vendors~reactUtils.21190b61010641d7361f.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","ecomm_community_reviews.f4885d4f52c1c29f2c6e.css","ecomm_community_reviews.127d9d67eecbefe32407.js"],"ecomm_market_catalog.js":["vendors~icons.ee7cc5d057a4ece695a3.js","vendors.efdfbf0ddb12cf2592b4.js","vendors~api.b279005beb188f707276.js","vendors~vk.32d66df2733d425ee922.js","vendors~effector.b5340cb672ed7feca413.js","vendors~vkjs.340a919cd27e60df5f77.js","vendors~reactUtils.21190b61010641d7361f.js","vendors~runtime.abd333fccd862f8b0ab9.js","vendors~videoplayer.9ff9d07b12cc9ac049e7.js","vendors~videoplayer-interactive.d6c6a89dbfe1e483b015.js","vendors~draggable.7128aa656293aad005a4.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","sticker-lib.59eb7d57c3d02aba2d14.css","sticker-lib.8fbb58d1a2069cea7ec9.js","b-32a4f924ef5b70925bf438593deaa5a7.0e619e925560463e10b1.js","b-078c5f830a3251daf8b69af42a5b7074.cdb63138683169671654.js","b-429e76ab4b0c05c50055d8dfd14f054f.2e2c26a3a6c973072bce.js","b-a23a659b9c76118f9d742ef7371a6233.7a109bf10f281133b62d.js","b-b0988e601fbadddb5ab450b9c1d5c37e.a697ebacc5526dcbc9ce.js","b-95e5eff0481cff4b9e6d3ddb574fa482.9100511837ca28e4e26a.js","b-34e71f9d847d3748ac028e1b133fbbb8.50074c657608b0e74860.js","b-b641cee90a436391b67e1b9ed9561ff7.82d8a679bcb356e72830.js","b-dca2e2779a989f010efa5e05362e7eb6.b0417ef8667953c23904.js","b-c105976aba685de80ba3d686c87d619c.7d2a97e3be5ed5646b1a.css","b-c105976aba685de80ba3d686c87d619c.f395dd3e96399b2c1c43.js","b-aa5f682223328d49abc9046a2d105e6b.ed76adccfc148e59b14d.js","b-870cc56e7290633b420b14b50db70c5c.e97c214d31f3154a31bb.js","b-953fa09620ce482fb3b83a029db6ea9c.01675dfc161a82a33911.js","b-699869767d91a890beecf25cdab6e320.46e84fe4750a06888faa.js","b-07f1f52559ac2edce449c749e2d35c3f.16228eea04ff8a1eabfc.js","b-692889c4762adea28a12088b6c271e4c.0de7d03fcc7dd294d848.js","b-afa6c8956d6f19f8a7cf9ecf2abd3433.14294d29c124bae50081.js","b-2d87d958843f1b15b7cb8191aedfb58d.8a82b3bb13b29d3e6a78.js","b-a28eb6368b9c2d3d6010aa6f416b958a.77819633dbefcc7c09db.js","ecomm_market_catalog.4484badfd4565431b973.css","ecomm_market_catalog.2c9303b1e73035701c81.js"],"ecomm_market_item_all_comments.js":["vendors~icons.ee7cc5d057a4ece695a3.js","vendors~effector.b5340cb672ed7feca413.js","vendors~reactUtils.21190b61010641d7361f.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","sticker-lib.59eb7d57c3d02aba2d14.css","sticker-lib.8fbb58d1a2069cea7ec9.js","b-078c5f830a3251daf8b69af42a5b7074.cdb63138683169671654.js","b-65f5d62b54041a566437b015f4ea9ee6.8338446b7d5e9c32a1d6.js","b-f9c5475f120139a42236c6c11b11b68d.50b42b763290788b2aa4.js","ecomm_market_item_all_comments.bca5abf35440544039fc.css","ecomm_market_item_all_comments.86cc40ed3e6df403b3ea.js"],"ecomm_market_item_buttons.js":["vendors~icons.ee7cc5d057a4ece695a3.js","vendors~api.b279005beb188f707276.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","b-32a4f924ef5b70925bf438593deaa5a7.0e619e925560463e10b1.js","b-429e76ab4b0c05c50055d8dfd14f054f.2e2c26a3a6c973072bce.js","b-3f0452cc123236e2f0c029e2e874d832.85baf967d6423206af8a.js","b-5239f2f6a01b002eeb1cdea8181bfdef.eee436d8c09463f34c3c.js","ecomm_market_item_buttons.8929f2ffa842bdced7a1.css","ecomm_market_item_buttons.27aff5f091be2697d198.js"],"ecomm_market_item_comments.js":["vendors~icons.ee7cc5d057a4ece695a3.js","vendors~effector.b5340cb672ed7feca413.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","sticker-lib.59eb7d57c3d02aba2d14.css","sticker-lib.8fbb58d1a2069cea7ec9.js","b-078c5f830a3251daf8b69af42a5b7074.cdb63138683169671654.js","b-65f5d62b54041a566437b015f4ea9ee6.8338446b7d5e9c32a1d6.js","b-f9c5475f120139a42236c6c11b11b68d.50b42b763290788b2aa4.js","ecomm_market_item_comments.5ce646a80ee904da07f2.css","ecomm_market_item_comments.6ed766a0501b8f52bac4.js"],"ecomm_market_item.js":["vendors~icons.ee7cc5d057a4ece695a3.js","vendors~api.b279005beb188f707276.js","vendors~effector.b5340cb672ed7feca413.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","sticker-lib.59eb7d57c3d02aba2d14.css","sticker-lib.8fbb58d1a2069cea7ec9.js","b-32a4f924ef5b70925bf438593deaa5a7.0e619e925560463e10b1.js","b-078c5f830a3251daf8b69af42a5b7074.cdb63138683169671654.js","b-429e76ab4b0c05c50055d8dfd14f054f.2e2c26a3a6c973072bce.js","b-65f5d62b54041a566437b015f4ea9ee6.8338446b7d5e9c32a1d6.js","b-3f0452cc123236e2f0c029e2e874d832.85baf967d6423206af8a.js","b-f9c5475f120139a42236c6c11b11b68d.50b42b763290788b2aa4.js","b-5239f2f6a01b002eeb1cdea8181bfdef.eee436d8c09463f34c3c.js","b-d88077a693fffe710ccbd31688dc08cc.ee3317b0a699b12c083f.js","ecomm_market_item.3e9393842a65f19b66a4.css","ecomm_market_item.9eecbef5a52bf59f052c.js"],"ecosystem_profile.js":["ecosystem_profile.4cb3e6e482718471b229.js"],"feed_achievement_game_block.js":["feed_achievement_game_block.ae001a2dd8f157612b4e.js"],"feed_animated_block.js":["feed_animated_block.9bd75d608211bd7bd1a4.css","feed_animated_block.b6a93c0b40c67b919dc9.js"],"feed_block_apps_recommendation.js":["vendors~icons.ee7cc5d057a4ece695a3.js","vendors~reactUtils.21190b61010641d7361f.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","b-7cd04e4681aa6f00b1482dda9ebff131.fecf3d9af9ab2e81d329.js","feed_block_apps_recommendation.9fd0478da651e2c0dce6.js"],"feed_block_recommended_groups.js":["vendors~icons.ee7cc5d057a4ece695a3.js","vendors~effector.b5340cb672ed7feca413.js","vendors~reactUtils.21190b61010641d7361f.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","b-7cd04e4681aa6f00b1482dda9ebff131.fecf3d9af9ab2e81d329.js","feed_block_recommended_groups.a1f081bad51f44f23e7e.js"],"feed_hide_post_block.js":["vendors~icons.ee7cc5d057a4ece695a3.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","feed_hide_post_block.4a356a6fbda366f505df.css","feed_hide_post_block.3f335aac32629f931fe2.js"],"feed_stories_block.js":["vendors~icons.ee7cc5d057a4ece695a3.js","vendors.efdfbf0ddb12cf2592b4.js","vendors~api.b279005beb188f707276.js","vendors~vk.32d66df2733d425ee922.js","vendors~videoplayer.9ff9d07b12cc9ac049e7.js","vendors~videoplayer-interactive.d6c6a89dbfe1e483b015.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","b-28073da1613dff47b2298beda5435a60.966dc4779bef6d11c7fe.js","b-0fd28224f4faae9c816f4e32041fce9a.ece437bd084b46488d63.js","b-29a6da2c71fc7f13d985ecf8a44ad1c4.2a5fe83ad3603aeb36c0.js","feed_stories_block.3c91b600ef1cbeb962c3.css","feed_stories_block.58997a3b7cf7545a38db.js"],"feed.js":["feed.c60d970fa0c6605b9698.js"],"friends_catalog.js":["vendors~icons.ee7cc5d057a4ece695a3.js","vendors.efdfbf0ddb12cf2592b4.js","vendors~api.b279005beb188f707276.js","vendors~vk.32d66df2733d425ee922.js","vendors~effector.b5340cb672ed7feca413.js","vendors~reactUtils.21190b61010641d7361f.js","vendors~runtime.abd333fccd862f8b0ab9.js","vendors~draggable.7128aa656293aad005a4.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","b-32a4f924ef5b70925bf438593deaa5a7.0e619e925560463e10b1.js","b-078c5f830a3251daf8b69af42a5b7074.cdb63138683169671654.js","b-b0988e601fbadddb5ab450b9c1d5c37e.a697ebacc5526dcbc9ce.js","b-c105976aba685de80ba3d686c87d619c.7d2a97e3be5ed5646b1a.css","b-c105976aba685de80ba3d686c87d619c.f395dd3e96399b2c1c43.js","b-953fa09620ce482fb3b83a029db6ea9c.01675dfc161a82a33911.js","b-07f1f52559ac2edce449c749e2d35c3f.16228eea04ff8a1eabfc.js","friends_catalog.9b175dc066e713ccbbc1.css","friends_catalog.f36c507f8309902735ed.js"],"friends.js":["vendors~icons.ee7cc5d057a4ece695a3.js","vendors~api.b279005beb188f707276.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","friends.22a3db1e37a4f0cbdc09.css","friends.35c1535b52ba71365cc6.js"],"game_install_screen.js":["vendors.efdfbf0ddb12cf2592b4.js","vendors~vk.32d66df2733d425ee922.js","vendors~effector.b5340cb672ed7feca413.js","vendors~vkjs.340a919cd27e60df5f77.js","vendors~onlyReact.be887b2656f05b5721cd.js","nav.631bac9af650d88ccf85.js","b-c3fa4b5cf3d22bcc8f8a9a9e5f6a961c.6bc0a49ffe0ccf7205ef.js","game_install_screen.109df769ec0bfda1a092.js"],"games_pwa.js":["vendors~icons.ee7cc5d057a4ece695a3.js","games_pwa.228821d8eb03db3013ee.js"],"grip.js":["grip.9d91dcd039670287309e.js"],"group_inactive_feed.js":["vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","group_inactive_feed.32413c099b4e4d218e3e.css","group_inactive_feed.88fc89ad1465264a7804.js"],"group_members_catalog.js":["vendors~icons.ee7cc5d057a4ece695a3.js","vendors.efdfbf0ddb12cf2592b4.js","vendors~api.b279005beb188f707276.js","vendors~vk.32d66df2733d425ee922.js","vendors~effector.b5340cb672ed7feca413.js","vendors~reactUtils.21190b61010641d7361f.js","vendors~runtime.abd333fccd862f8b0ab9.js","vendors~draggable.7128aa656293aad005a4.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","b-32a4f924ef5b70925bf438593deaa5a7.0e619e925560463e10b1.js","b-078c5f830a3251daf8b69af42a5b7074.cdb63138683169671654.js","b-b0988e601fbadddb5ab450b9c1d5c37e.a697ebacc5526dcbc9ce.js","b-c105976aba685de80ba3d686c87d619c.7d2a97e3be5ed5646b1a.css","b-c105976aba685de80ba3d686c87d619c.f395dd3e96399b2c1c43.js","b-953fa09620ce482fb3b83a029db6ea9c.01675dfc161a82a33911.js","b-07f1f52559ac2edce449c749e2d35c3f.16228eea04ff8a1eabfc.js","group_members_catalog.9b175dc066e713ccbbc1.css","group_members_catalog.54c1965cce06a1724c8b.js"],"group_redesign_name_history.js":["vendors~icons.ee7cc5d057a4ece695a3.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","b-108c70610cfa2b366a68353bc01a4027.b0b9727c1e7f7118ce8f.js","group_redesign_name_history.574d3597cade6f80d3a4.css","group_redesign_name_history.e189c77f2e3bef1e1bf1.js"],"group_redesign.js":["vendors~icons.ee7cc5d057a4ece695a3.js","vendors.efdfbf0ddb12cf2592b4.js","vendors~api.b279005beb188f707276.js","vendors~effector.b5340cb672ed7feca413.js","vendors~vkjs.340a919cd27e60df5f77.js","vendors~framer-motion.9df34d0685392bc39f8b.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","b-32a4f924ef5b70925bf438593deaa5a7.0e619e925560463e10b1.js","b-429e76ab4b0c05c50055d8dfd14f054f.2e2c26a3a6c973072bce.js","b-108c70610cfa2b366a68353bc01a4027.b0b9727c1e7f7118ce8f.js","b-332733e7ea13ccea78b8f534da526a7c.52b5a845d890176ef427.js","b-06fcc30b01231cb9d827970c93419860.b874e0efd8521b679687.js","group_redesign.ecf4885a514748c514f7.css","group_redesign.7e1e58145624fc10ad47.js"],"groups_catalog.js":["groups_catalog.9454997fadc54840f29e.js"],"join_avatar.js":["vendors~icons.ee7cc5d057a4ece695a3.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","join_avatar.6e4bda795fe6f4c56dab.css","join_avatar.bab07dfb3ce3eb8e14ed.js"],"join_email_check.js":["join_email_check.2d4d745eec82b41180ac.js"],"join.js":["vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","join.9b5f8719da41a6ed0efb.css","join.b040f4f6311a7d84d6f9.js"],"mail_tooltips.js":["mail_tooltips.2b5cae6b034fc73849f1.js"],"mail.js":["b-2e536b6ac412242dbf14439fb0657d8b.8504660b2b8c79bbb0de.js","mail.1b385d2fb57ca4bc09ef.js"],"market_analytics.js":["market_analytics.0f94472de349e75e505a.js"],"market.js":["market.99acbf4fbb2cf937fa7d.js"],"mini_apps_catalog_search.js":["mini_apps_catalog_search.99aab4e6ee39c17e500c.js"],"mini_apps_catalog.js":["mini_apps_catalog.0965bbfd7d595b4c74a9.js"],"mini_apps_left_menu_tooltip.js":["mini_apps_left_menu_tooltip.793e270f4eb957d4efcb.js"],"mini_apps_recommended_carousel_async.js":["mini_apps_recommended_carousel_async.500fe93509787876be5d.js"],"mini_apps_recommended_carousel.js":["mini_apps_recommended_carousel.4b1140baac8ec8f635a3.js"],"mini_apps.js":["vendors~icons.ee7cc5d057a4ece695a3.js","vendors.efdfbf0ddb12cf2592b4.js","vendors~api.b279005beb188f707276.js","vendors~vk.32d66df2733d425ee922.js","vendors~vkjs.340a919cd27e60df5f77.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","b-c0e0d1ac6bdd3fbced37953f83562c64.266cdd0f81eaa22601ca.js","b-4c7b62ed738db3023812353787795139.dfc3592d93984f3cb24f.js","b-24f7dec4f3fcd04e26684c3903ba6065.4c45a857641b19350bc1.js","b-25a239a31c88d972ace40ddc3bc69eb6.36be4a9c5043a71054c2.js","b-5564c4910055ef89dd86a5925a6657f3.5d0a854d9d7cb9943813.js","b-46c310999fd110a9a47f227ac880d92f.01e43049fa630edc4499.js","b-07092d36b87a9154130c3963f0f52e26.0b23a45e31c99991454f.css","b-ada49380209bcd80ac0c3dde9fae3d6f.84959568e6fe14c8aa6e.js","b-8b02aa66b9b081529c8312f480fda84b.1d933d268c973dd0b702.js","mini_apps.be3233b6cd7896514c85.css","mini_apps.948053038297b55e0cc0.js"],"miniapps_orders_history.js":["miniapps_orders_history.fd2813b441a360f5618c.js"],"money_transfer_history.js":["money_transfer_history.1fa57f3c616f5fd5cc00.js"],"narratives.js":["vendors.efdfbf0ddb12cf2592b4.js","vendors~api.b279005beb188f707276.js","vendors~videoplayer.9ff9d07b12cc9ac049e7.js","vendors~videoplayer-interactive.d6c6a89dbfe1e483b015.js","vendors~draggable.7128aa656293aad005a4.js","vendors~cropperjs.aa090289ceecaa0e3b49.js","b-28073da1613dff47b2298beda5435a60.966dc4779bef6d11c7fe.js","b-a4cc8daabd76dd97f9b7a23ffe0d5369.0ebe32427b1eb844ee38.js","b-42f365214e3492f43c83bfeb63d0df98.ef4031ecf0d4c768d3d7.js","b-99cc90d24c66ebce9b9f81499a9d58bb.52c4a392ad51c8627051.js","narratives.589d566d7811e8579f5f.js"],"node_ssr.js":["vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","node_ssr.0ac789b74a6db4b1daf2.js"],"onboarding_screen_download_app.js":["onboarding_screen_download_app.c3af727770ce4f689b7e.js"],"onboarding_screen_recom_themes.js":["vendors~icons.ee7cc5d057a4ece695a3.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","onboarding_screen_recom_themes.c0b0e5422831e9e79434.css","onboarding_screen_recom_themes.4b465f4ecd8b32c634c3.js"],"openapi.js":["openapi.07b124e4b064b632144e.js"],"owner_cover_upload.js":["vendors~icons.ee7cc5d057a4ece695a3.js","vendors~vkjs.340a919cd27e60df5f77.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","b-6a8902acfba71caaeb203689482ef491.ed9f10846756462ec21e.js","b-ceabe5c43d09cadb9002d9445e935168.299f0d5b687394812d54.js","b-1f193218d776e4bd5aa39c8c779625c7.813dc8cac2950f76ca7a.js","owner_cover_upload.a0391ce31f4b3c78d4d4.css","owner_cover_upload.be4e1e4ebc47043d03b9.js"],"owner_photo_upload.js":["vendors~icons.ee7cc5d057a4ece695a3.js","vendors.efdfbf0ddb12cf2592b4.js","vendors~api.b279005beb188f707276.js","vendors~vk.32d66df2733d425ee922.js","vendors~vkjs.340a919cd27e60df5f77.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","b-c0e0d1ac6bdd3fbced37953f83562c64.266cdd0f81eaa22601ca.js","b-4c7b62ed738db3023812353787795139.dfc3592d93984f3cb24f.js","b-24f7dec4f3fcd04e26684c3903ba6065.4c45a857641b19350bc1.js","b-25a239a31c88d972ace40ddc3bc69eb6.36be4a9c5043a71054c2.js","owner_photo_upload.9eef17bfb873c705496f.css","owner_photo_upload.54084b172055de9a7f9f.js"],"page_bottom_banners.js":["b-429e76ab4b0c05c50055d8dfd14f054f.2e2c26a3a6c973072bce.js","page_bottom_banners.6c6db6c1355884403d01.js"],"payments.js":["payments.ddf4ee8bb10a19df3a2b.js"],"performance_observers.js":["performance_observers.2c8e2ee0c3583cd9aa2f.js"],"photo_stream.js":["vendors.efdfbf0ddb12cf2592b4.js","vendors~vk.32d66df2733d425ee922.js","vendors~runtime.abd333fccd862f8b0ab9.js","photo_stream.2e214ba17e88fe24966d.js"],"photo.js":["vendors~icons.ee7cc5d057a4ece695a3.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","b-429e76ab4b0c05c50055d8dfd14f054f.2e2c26a3a6c973072bce.js","photo.9051d8eeb171d392fdb8.css","photo.87f6c6fcab1904edeb8a.js"],"photoview.js":["photoview.68b66ef8b1107370210f.js"],"polyfills.js":["runtime.72f8f6de6031696b6f6c.js","vendors.efdfbf0ddb12cf2592b4.js","vendors~sentry.203e7b566ef4abf59702.js","b-5b00aea572e45c70bbebccd522bc0f0e.6da97a374bc5c386d54b.js","polyfills.12f059a63394e7664c29.js"],"post_attachments_block.js":["vendors~icons.ee7cc5d057a4ece695a3.js","vendors.efdfbf0ddb12cf2592b4.js","vendors~api.b279005beb188f707276.js","vendors~videoplayer.9ff9d07b12cc9ac049e7.js","vendors~videoplayer-interactive.d6c6a89dbfe1e483b015.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","b-32a4f924ef5b70925bf438593deaa5a7.0e619e925560463e10b1.js","b-a23a659b9c76118f9d742ef7371a6233.7a109bf10f281133b62d.js","b-95e5eff0481cff4b9e6d3ddb574fa482.9100511837ca28e4e26a.js","b-34e71f9d847d3748ac028e1b133fbbb8.50074c657608b0e74860.js","b-b641cee90a436391b67e1b9ed9561ff7.82d8a679bcb356e72830.js","b-dca2e2779a989f010efa5e05362e7eb6.b0417ef8667953c23904.js","b-870cc56e7290633b420b14b50db70c5c.e97c214d31f3154a31bb.js","b-1c5a1893b634ad6001105166cd69d0e8.7c8bbf27c3673b652b06.js","post_attachments_block.d06c11ca83a0861172a1.css","post_attachments_block.5b431c743accc2d58dfd.js"],"post_content_container.js":["vendors~icons.ee7cc5d057a4ece695a3.js","vendors.efdfbf0ddb12cf2592b4.js","vendors~api.b279005beb188f707276.js","vendors~vk.32d66df2733d425ee922.js","vendors~videoplayer.9ff9d07b12cc9ac049e7.js","vendors~videoplayer-interactive.d6c6a89dbfe1e483b015.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","b-32a4f924ef5b70925bf438593deaa5a7.0e619e925560463e10b1.js","b-a23a659b9c76118f9d742ef7371a6233.7a109bf10f281133b62d.js","b-95e5eff0481cff4b9e6d3ddb574fa482.9100511837ca28e4e26a.js","b-34e71f9d847d3748ac028e1b133fbbb8.50074c657608b0e74860.js","b-b641cee90a436391b67e1b9ed9561ff7.82d8a679bcb356e72830.js","b-dca2e2779a989f010efa5e05362e7eb6.b0417ef8667953c23904.js","b-870cc56e7290633b420b14b50db70c5c.e97c214d31f3154a31bb.js","b-692889c4762adea28a12088b6c271e4c.0de7d03fcc7dd294d848.js","b-1c5a1893b634ad6001105166cd69d0e8.7c8bbf27c3673b652b06.js","post_content_container.d06c11ca83a0861172a1.css","post_content_container.58560ef4dcddf5fb1889.js"],"post_context_menu.js":["post_context_menu.a87779c098ee8da0a66a.js"],"post_header.js":["vendors~icons.ee7cc5d057a4ece695a3.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","post_header.f9d23526c87f9d2054ad.css","post_header.a3dc0231c9dec30d0dbd.js"],"post_stats_pixel.js":["post_stats_pixel.198d1ca9082a8031e64b.js"],"post_translation.js":["vendors~icons.ee7cc5d057a4ece695a3.js","post_translation.1a72a14476290df4eaaa.js"],"posting_hashtags.js":["posting_hashtags.d42e61223912f8f32ab8.js"],"posting_redesign.js":["vendors~api.b279005beb188f707276.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","b-609a21db14780a7efe3192b8d1dd386d.840e862de92dcc6b57c2.js","posting_redesign.51fff66032046d82a1fe.js"],"primary_attachment_album.js":["vendors~icons.ee7cc5d057a4ece695a3.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","primary_attachment_album.27978d67ec1141ea1337.js"],"primary_attachment_article.js":["vendors~icons.ee7cc5d057a4ece695a3.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","primary_attachment_article.9bdc30c48d097394ecb6.js"],"primary_attachment_audio.js":["vendors~icons.ee7cc5d057a4ece695a3.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","b-a23a659b9c76118f9d742ef7371a6233.7a109bf10f281133b62d.js","b-95e5eff0481cff4b9e6d3ddb574fa482.9100511837ca28e4e26a.js","primary_attachment_audio.e8806d1829bebc40c314.css","primary_attachment_audio.aa71d07ddeef9618eb60.js"],"primary_attachment_link.js":["vendors~icons.ee7cc5d057a4ece695a3.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","primary_attachment_link.310e7695d8bca2e45e38.js"],"primary_attachment_poll.js":["vendors~icons.ee7cc5d057a4ece695a3.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","b-a23a659b9c76118f9d742ef7371a6233.7a109bf10f281133b62d.js","b-95e5eff0481cff4b9e6d3ddb574fa482.9100511837ca28e4e26a.js","b-dca2e2779a989f010efa5e05362e7eb6.b0417ef8667953c23904.js","primary_attachment_poll.6c6d45636ef876d26602.css","primary_attachment_poll.3e213a097891a297eafc.js"],"profile_edit.js":["vendors~icons.ee7cc5d057a4ece695a3.js","vendors~api.b279005beb188f707276.js","vendors~effector.b5340cb672ed7feca413.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","b-078c5f830a3251daf8b69af42a5b7074.cdb63138683169671654.js","b-429e76ab4b0c05c50055d8dfd14f054f.2e2c26a3a6c973072bce.js","b-6a8902acfba71caaeb203689482ef491.ed9f10846756462ec21e.js","b-ceabe5c43d09cadb9002d9445e935168.299f0d5b687394812d54.js","b-1f193218d776e4bd5aa39c8c779625c7.813dc8cac2950f76ca7a.js","b-8ece2e74fab51c90e9de551a03503435.7885a14cd992b566dd0e.js","profile_edit.6ccbe7509a66c163223f.css","profile_edit.c63294db6fb0c80fe67f.js"],"profile_redesign_sync.js":["vendors~icons.ee7cc5d057a4ece695a3.js","vendors.efdfbf0ddb12cf2592b4.js","vendors~api.b279005beb188f707276.js","vendors~vk.32d66df2733d425ee922.js","vendors~effector.b5340cb672ed7feca413.js","vendors~vkjs.340a919cd27e60df5f77.js","vendors~reactUtils.21190b61010641d7361f.js","vendors~runtime.abd333fccd862f8b0ab9.js","vendors~videoplayer.9ff9d07b12cc9ac049e7.js","vendors~videoplayer-interactive.d6c6a89dbfe1e483b015.js","vendors~draggable.7128aa656293aad005a4.js","vendors~framer-motion.9df34d0685392bc39f8b.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","sticker-lib.59eb7d57c3d02aba2d14.css","sticker-lib.8fbb58d1a2069cea7ec9.js","b-32a4f924ef5b70925bf438593deaa5a7.0e619e925560463e10b1.js","b-078c5f830a3251daf8b69af42a5b7074.cdb63138683169671654.js","b-429e76ab4b0c05c50055d8dfd14f054f.2e2c26a3a6c973072bce.js","b-a23a659b9c76118f9d742ef7371a6233.7a109bf10f281133b62d.js","b-b0988e601fbadddb5ab450b9c1d5c37e.a697ebacc5526dcbc9ce.js","b-95e5eff0481cff4b9e6d3ddb574fa482.9100511837ca28e4e26a.js","b-34e71f9d847d3748ac028e1b133fbbb8.50074c657608b0e74860.js","b-b641cee90a436391b67e1b9ed9561ff7.82d8a679bcb356e72830.js","b-dca2e2779a989f010efa5e05362e7eb6.b0417ef8667953c23904.js","b-c105976aba685de80ba3d686c87d619c.7d2a97e3be5ed5646b1a.css","b-c105976aba685de80ba3d686c87d619c.f395dd3e96399b2c1c43.js","b-aa5f682223328d49abc9046a2d105e6b.ed76adccfc148e59b14d.js","b-870cc56e7290633b420b14b50db70c5c.e97c214d31f3154a31bb.js","b-953fa09620ce482fb3b83a029db6ea9c.01675dfc161a82a33911.js","b-699869767d91a890beecf25cdab6e320.46e84fe4750a06888faa.js","b-07f1f52559ac2edce449c749e2d35c3f.16228eea04ff8a1eabfc.js","b-692889c4762adea28a12088b6c271e4c.0de7d03fcc7dd294d848.js","b-afa6c8956d6f19f8a7cf9ecf2abd3433.14294d29c124bae50081.js","b-2d87d958843f1b15b7cb8191aedfb58d.8a82b3bb13b29d3e6a78.js","b-65f5d62b54041a566437b015f4ea9ee6.8338446b7d5e9c32a1d6.js","b-e2450563824553bf3538e585cb9152b0.100ec9b05f5e06cb83c6.js","b-cb257529e9a7c3c84a2f615866234c3a.284a1e9bccfbeb905be2.js","b-6a8902acfba71caaeb203689482ef491.ed9f10846756462ec21e.js","b-0ee09d95d7aaf96f458d656f2c765130.8c1c796eddd0a32bbd87.js","b-be9b606538106af9725af36a151b7481.97c28e3bf9c22c9687fe.js","b-7cd04e4681aa6f00b1482dda9ebff131.fecf3d9af9ab2e81d329.js","b-c5963d0937bdf77bfc837270b513b797.174c0975ff83c4478d3e.js","b-e8c49887899629ee885a1da77b294c89.cae3373f22328d31dc09.js","b-ceabe5c43d09cadb9002d9445e935168.299f0d5b687394812d54.js","b-1f193218d776e4bd5aa39c8c779625c7.813dc8cac2950f76ca7a.js","b-f4bf5ad494b4c781c09fbb982502f174.fc1bd32ee991bcdeb2ff.css","b-f4bf5ad494b4c781c09fbb982502f174.4312bb35dacf3d978463.js","b-dc5284ac517c28fc531c0ddf89d66185.e4ae6430b6839d64d066.js","b-6b0c3c61a76bcdc4f57e1f6bb4d58fe3.4fedfcc8aa46462040b6.js","b-7a0cea90aae215bce6834167a559b67e.b55c7107d6b6fdd00ad5.js","b-85b5a2a9a4c6676661c456a72f2db231.045000054d0be0de0565.js","b-8ece2e74fab51c90e9de551a03503435.7885a14cd992b566dd0e.js","b-5367f3c46d92dcdc31e21d325ea7f07b.5ece64f91e94d28b4283.css","b-5367f3c46d92dcdc31e21d325ea7f07b.3122a4638d9a02abd86a.js","profile_redesign_sync.92b356d583bac2457762.css","profile_redesign_sync.42e540c88d04ee3539cc.js"],"profile_redesign.js":["b-6a8902acfba71caaeb203689482ef491.ed9f10846756462ec21e.js","b-ceabe5c43d09cadb9002d9445e935168.299f0d5b687394812d54.js","profile_redesign.92b356d583bac2457762.css","profile_redesign.23f7b96640d2c35e3a26.js"],"profile.js":["profile.1336522c1d74dcf16796.js"],"promocode_partners.js":["promocode_partners.0b6846d17e3c1c4d5263.js"],"promocode.js":["promocode.e3b36f640226d230e9ee.js"],"pwa.js":["pwa.28d0a02ba7b9e5c84292.js"],"qrcode.js":["qrcode.7f2d1ad8aa84f04df936.js"],"reactions.js":["reactions.0310849750100b9e9d4b.js"],"redesign_wall_post.js":["redesign_wall_post.bea68e7d750b2c5ab19b.js"],"redirect_screen.js":["redirect_screen.9e37d23a4686787b053e.js"],"sak_unauthorized.js":["sak_unauthorized.2ee391af9a1b94b8df2e.js"],"sentry.js":["vendors~sentry.203e7b566ef4abf59702.js","vendors~eventemitter.f79c689caa23f8c556a6.js","b-077bca6f491ed9ece107680a7718b4db.a117d4e205c06b69b7e3.js","sentry.7370d0cf17d3877ddf28.js"],"settings.js":["settings.f9b75dec2b8333e3b2d9.js"],"short_video.js":["short_video.d74a591b4f0d016b4658.js"],"showcase_menu.js":["showcase_menu.8e495eca491eddea3479.js"],"stickers.js":["stickers.73618bdb5669a7f486c2.js"],"stories_archive.js":["vendors.efdfbf0ddb12cf2592b4.js","vendors~api.b279005beb188f707276.js","vendors~videoplayer.9ff9d07b12cc9ac049e7.js","vendors~videoplayer-interactive.d6c6a89dbfe1e483b015.js","b-28073da1613dff47b2298beda5435a60.966dc4779bef6d11c7fe.js","b-99cc90d24c66ebce9b9f81499a9d58bb.52c4a392ad51c8627051.js","stories_archive.795925551fe382c6f597.js"],"stories_feed_block.js":["vendors~icons.ee7cc5d057a4ece695a3.js","vendors~vk.32d66df2733d425ee922.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","b-0fd28224f4faae9c816f4e32041fce9a.ece437bd084b46488d63.js","b-29a6da2c71fc7f13d985ecf8a44ad1c4.2a5fe83ad3603aeb36c0.js","stories_feed_block.a0fdb7402c2226aa4392.css","stories_feed_block.ddba18f73a948bb5239f.js"],"stories.js":["vendors~icons.ee7cc5d057a4ece695a3.js","vendors.efdfbf0ddb12cf2592b4.js","vendors~api.b279005beb188f707276.js","vendors~videoplayer.9ff9d07b12cc9ac049e7.js","vendors~videoplayer-interactive.d6c6a89dbfe1e483b015.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","b-28073da1613dff47b2298beda5435a60.966dc4779bef6d11c7fe.js","b-29a6da2c71fc7f13d985ecf8a44ad1c4.2a5fe83ad3603aeb36c0.js","stories.1605dc23cdecb2081fb9.css","stories.22ef7220138f00bf4863.js"],"superapp.js":["superapp.fcdec04aa9668cf046bb.js"],"textlives.js":["textlives.3161f20a344783b618ea.js"],"thumbs_edit.js":["b-aa681c5e0668527bf910da226193f1dd.a317cd758be243fdf57c.js","thumbs_edit.1db119e905de442ab7c9.js"],"tracer.js":["vendors~sentry.203e7b566ef4abf59702.js","tracer.941728a70a34a5fb8ab8.js"],"ugc_sticker.js":["ugc_sticker.4bbc26db8c8045ad7547.js"],"unauthorized_search.js":["unauthorized_search.27573e1014122661c4be.js"],"unauthorized.js":["b-429e76ab4b0c05c50055d8dfd14f054f.2e2c26a3a6c973072bce.js","unauthorized.cf370c9c852800ed3739.js"],"unban_recommendation.js":["vendors~icons.ee7cc5d057a4ece695a3.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","unban_recommendation.16e6f9db6af8980605f7.css","unban_recommendation.52d8ff626cad28ded73b.js"],"uxpolls.js":["b-cb257529e9a7c3c84a2f615866234c3a.284a1e9bccfbeb905be2.js","uxpolls.c4b862c4ad0fab7cdbe7.js"],"video_showcase.js":["video_showcase.63ee7dc3230a8f305a01.js"],"video.js":["vendors.efdfbf0ddb12cf2592b4.js","vendors~api.b279005beb188f707276.js","vendors~vk.32d66df2733d425ee922.js","vendors~vkjs.340a919cd27e60df5f77.js","vendors~videoplayer.9ff9d07b12cc9ac049e7.js","vendors~videoplayer-interactive.d6c6a89dbfe1e483b015.js","b-078c5f830a3251daf8b69af42a5b7074.cdb63138683169671654.js","b-b0988e601fbadddb5ab450b9c1d5c37e.a697ebacc5526dcbc9ce.js","b-e2450563824553bf3538e585cb9152b0.100ec9b05f5e06cb83c6.js","b-cc6f0a54b685f3ffae1c1566df0cb25c.45a4907df1ff2df62dd5.js","b-107f6aafa2e9fd586decb89014600666.3a2e88a412ac4c9f1ad1.js","video.3acec01d79eba9a06434.js"],"vk_sans_observer.js":["vk_sans_observer.83f59d98a565f2bda818.js"],"vkapps.js":["vendors~icons.ee7cc5d057a4ece695a3.js","vendors.efdfbf0ddb12cf2592b4.js","vendors~api.b279005beb188f707276.js","vendors~vk.32d66df2733d425ee922.js","vendors~effector.b5340cb672ed7feca413.js","vendors~vkjs.340a919cd27e60df5f77.js","vendors~runtime.abd333fccd862f8b0ab9.js","vendors~vkui.3461beece63b8ceefd06.js","vendors~onlyReact.be887b2656f05b5721cd.js","vendors~qr.5938e060b7e3c0cedd3a.js","nav.631bac9af650d88ccf85.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","b-c0e0d1ac6bdd3fbced37953f83562c64.266cdd0f81eaa22601ca.js","b-4c7b62ed738db3023812353787795139.dfc3592d93984f3cb24f.js","b-24f7dec4f3fcd04e26684c3903ba6065.4c45a857641b19350bc1.js","b-25a239a31c88d972ace40ddc3bc69eb6.36be4a9c5043a71054c2.js","b-5564c4910055ef89dd86a5925a6657f3.5d0a854d9d7cb9943813.js","b-a41188998107cca6039611589eda801a.f3c73e962eebb3217638.js","b-c3fa4b5cf3d22bcc8f8a9a9e5f6a961c.6bc0a49ffe0ccf7205ef.js","b-c2101f988be28e5dd4bc34283f6b2c1f.c77c5e2fc5922913a24b.js","b-6d33e8a84c1bea37e4edb45228773ec0.8437b2f777e0ec2f7aff.js","b-9069917d425301359d47b82c032a881a.ac9cec52c64b28ab9d37.js","b-5a7c90e185cf28b511683411649a6454.1f9e3fac118065be1e91.js","b-ada49380209bcd80ac0c3dde9fae3d6f.84959568e6fe14c8aa6e.js","b-497eee843e8572661eae92ebbdce1210.1553f539072acf10bc17.js","vkapps.c6b61287cd042a4a4d17.css","vkapps.6a2a1afdd999a1759670.js"],"vkui_playground.js":["vendors.efdfbf0ddb12cf2592b4.js","vendors~vk.32d66df2733d425ee922.js","vendors~runtime.abd333fccd862f8b0ab9.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","vkui_playground.8974a99ec9950097a045.js"],"wall_posting.js":["b-b560a386204e7abe3de81e7cbf5c8a53.1edfe7c38b3786c22c2b.js","wall_posting.0bc5e9bbd75485a7b881.js"],"wall_view_stats.js":["wall_view_stats.b1651b5e9339908a605c.js"],"wall.js":["vendors~icons.ee7cc5d057a4ece695a3.js","vendors.efdfbf0ddb12cf2592b4.js","vendors~api.b279005beb188f707276.js","vendors~vk.32d66df2733d425ee922.js","vendors~vkjs.340a919cd27e60df5f77.js","vendors~runtime.abd333fccd862f8b0ab9.js","vkcom-kit.ae68ad6f0237427db456.css","vkcom-kit.34e7fd210d68a5de8359.js","b-32a4f924ef5b70925bf438593deaa5a7.0e619e925560463e10b1.js","b-078c5f830a3251daf8b69af42a5b7074.cdb63138683169671654.js","b-a23a659b9c76118f9d742ef7371a6233.7a109bf10f281133b62d.js","b-95e5eff0481cff4b9e6d3ddb574fa482.9100511837ca28e4e26a.js","b-34e71f9d847d3748ac028e1b133fbbb8.50074c657608b0e74860.js","b-c0e0d1ac6bdd3fbced37953f83562c64.266cdd0f81eaa22601ca.js","b-4c7b62ed738db3023812353787795139.dfc3592d93984f3cb24f.js","b-24f7dec4f3fcd04e26684c3903ba6065.4c45a857641b19350bc1.js","b-25a239a31c88d972ace40ddc3bc69eb6.36be4a9c5043a71054c2.js","b-5564c4910055ef89dd86a5925a6657f3.5d0a854d9d7cb9943813.js","b-cb257529e9a7c3c84a2f615866234c3a.284a1e9bccfbeb905be2.js","b-46c310999fd110a9a47f227ac880d92f.01e43049fa630edc4499.js","b-be9b606538106af9725af36a151b7481.97c28e3bf9c22c9687fe.js","b-07092d36b87a9154130c3963f0f52e26.0b23a45e31c99991454f.css","b-627efb1a3ef171a5171e9494c714969c.4da6c5a7e386d938df83.js","wall.5ff460a914b9d33df239.css","wall.34f13e52eb2005abec7b.js"],"window_proxy.js":["vendors.efdfbf0ddb12cf2592b4.js","vendors~vkjs.340a919cd27e60df5f77.js","vendors~eventemitter.f79c689caa23f8c556a6.js","b-077bca6f491ed9ece107680a7718b4db.a117d4e205c06b69b7e3.js","b-ceaa9315a32960f26bfe1bd3f4da9134.d0ca48a36299e376332e.js","window_proxy.1d43616fb6bbd0321b1f.js"],"xss_playground.js":["xss_playground.c9b34e353be0c922f6cb.js"],"yabro_debug.js":["yabro_debug.2e53be094c9bd29a694e.js"]},"async_assets":{"apps.js":["MobileCallsBridge.32116b75f11513d66d73.js","mvk-call_modal_chunk.452c09d2b3b95b176e3a.js"],"calls.js":["MobileCallsBridge.32116b75f11513d66d73.js","mvk-call_modal_chunk.452c09d2b3b95b176e3a.js"],"ecomm_market_catalog.js":["MobileCallsBridge.32116b75f11513d66d73.js","mvk-call_modal_chunk.452c09d2b3b95b176e3a.js"],"profile_redesign_sync.js":["MobileCallsBridge.32116b75f11513d66d73.js","mvk-call_modal_chunk.452c09d2b3b95b176e3a.js"],"global-spa.js":["MobileCallsBridge.32116b75f11513d66d73.js","mvk-call_modal_chunk.452c09d2b3b95b176e3a.js"],"VideoShowcasePage.js":["MobileCallsBridge.32116b75f11513d66d73.js","mvk-call_modal_chunk.452c09d2b3b95b176e3a.js"],"mvk-call_modal_chunk.js":["mvk-call_modal_chunk.452c09d2b3b95b176e3a.js","MobileCallsBridge.32116b75f11513d66d73.js"],"MiniAppsCatalog.js":["MobileCallsBridge.32116b75f11513d66d73.js","mvk-call_modal_chunk.452c09d2b3b95b176e3a.js"],"CommunitiesMembersCatalog.js":["MobileCallsBridge.32116b75f11513d66d73.js","mvk-call_modal_chunk.452c09d2b3b95b176e3a.js"],"FriendsCatalog.js":["MobileCallsBridge.32116b75f11513d66d73.js","mvk-call_modal_chunk.452c09d2b3b95b176e3a.js"],"CommunitiesShowcase.js":["MobileCallsBridge.32116b75f11513d66d73.js","mvk-call_modal_chunk.452c09d2b3b95b176e3a.js"],"CommunitiesCatalog.js":["MobileCallsBridge.32116b75f11513d66d73.js","mvk-call_modal_chunk.452c09d2b3b95b176e3a.js"],"AudioCatalog.js":["MobileCallsBridge.32116b75f11513d66d73.js","mvk-call_modal_chunk.452c09d2b3b95b176e3a.js"],"SearchCatalog.js":["MobileCallsBridge.32116b75f11513d66d73.js","mvk-call_modal_chunk.452c09d2b3b95b176e3a.js"],"vendors~icons.js":["MobileCallsBridge.32116b75f11513d66d73.js","mvk-call_modal_chunk.452c09d2b3b95b176e3a.js"],"vendors.js":["MobileCallsBridge.32116b75f11513d66d73.js","mvk-call_modal_chunk.452c09d2b3b95b176e3a.js"],"vendors~api.js":["MobileCallsBridge.32116b75f11513d66d73.js","mvk-call_modal_chunk.452c09d2b3b95b176e3a.js"],"vendors~vk.js":["MobileCallsBridge.32116b75f11513d66d73.js","mvk-call_modal_chunk.452c09d2b3b95b176e3a.js"],"vendors~effector.js":["MobileCallsBridge.32116b75f11513d66d73.js","mvk-call_modal_chunk.452c09d2b3b95b176e3a.js"],"vendors~vkjs.js":["MobileCallsBridge.32116b75f11513d66d73.js","mvk-call_modal_chunk.452c09d2b3b95b176e3a.js"],"vendors~reactUtils.js":["MobileCallsBridge.32116b75f11513d66d73.js","mvk-call_modal_chunk.452c09d2b3b95b176e3a.js"],"vendors~runtime.js":["MobileCallsBridge.32116b75f11513d66d73.js","mvk-call_modal_chunk.452c09d2b3b95b176e3a.js"],"vendors~videoplayer.js":["MobileCallsBridge.32116b75f11513d66d73.js","mvk-call_modal_chunk.452c09d2b3b95b176e3a.js"],"vendors~videoplayer-interactive.js":["MobileCallsBridge.32116b75f11513d66d73.js","mvk-call_modal_chunk.452c09d2b3b95b176e3a.js"],"vendors~draggable.js":["MobileCallsBridge.32116b75f11513d66d73.js","mvk-call_modal_chunk.452c09d2b3b95b176e3a.js"],"vendors~vkui.js":["MobileCallsBridge.32116b75f11513d66d73.js","mvk-call_modal_chunk.452c09d2b3b95b176e3a.js"],"vendors~onlyReact.js":["MobileCallsBridge.32116b75f11513d66d73.js","mvk-call_modal_chunk.452c09d2b3b95b176e3a.js"],"vendors~framer-motion.js":["MobileCallsBridge.32116b75f11513d66d73.js","mvk-call_modal_chunk.452c09d2b3b95b176e3a.js"],"vendors~qr.js":["MobileCallsBridge.32116b75f11513d66d73.js","mvk-call_modal_chunk.452c09d2b3b95b176e3a.js"],"nav.js":["MobileCallsBridge.32116b75f11513d66d73.js","mvk-call_modal_chunk.452c09d2b3b95b176e3a.js"],"vkcom-kit.js":["MobileCallsBridge.32116b75f11513d66d73.js","mvk-call_modal_chunk.452c09d2b3b95b176e3a.js"],"sticker-lib.js":["MobileCallsBridge.32116b75f11513d66d73.js","mvk-call_modal_chunk.452c09d2b3b95b176e3a.js"]},"init_entries":["polyfills.js","window_proxy.js","vk_sans_observer.js"]},"lang":0,"countryISO":"RU","pe":{"market_item_comment_spa_mvk":1,"mvk_calls_spa_join_screen":1,"send_user_info_stats":1,"force_send_user_info":1,"send_user_info_on_localhost":1,"push_notifier":1,"app_pwa_platform_analytics":1,"mini_apps_web_add_to_favorites":1,"mini_apps_check_allowed_scopes_no_validation":1,"mini_apps.web_app_get_friends_with_api":1,"mini_apps_fix_modal_menu_safari_view":1,"mini_apps_share_enrich_mvk":1,"mini_apps_send_stat_arguments_bridge_events":1,"mini_apps_get_friends_mvk":1,"mini_apps_performance_close_app_empty_event":1,"mini_apps_track_event_extra_call":1,"mini_apps_show_actions_fix":1,"mini_apps_send_stat_arguments_bridge_events_sdk":1,"mini_apps_fix_iframe_sizing":1,"mini_apps_hide_close_app":1,"mini_apps_replace_cur_app_with_get_current_app":1,"mini_apps_delete_window_VKAppsActionMenuModal":1,"remove_showAppsBox_from_app_instance":1,"mini_apps_delete_window_orderBoxHandler":1,"mini_apps_sdk_launch":1,"mini_apps_disable_vk_web_app_open_article_editor":1,"mini_apps_sdk_together_several_modals":1,"mini_apps_sdk_v2":1,"mini_apps_sdk_launch_allow_postponed_start":1,"mini_apps_sdk_collect_stats":1,"mini_apps_methods_config":1,"mini_apps_sdk_fix_pay_form":1,"mini_apps_bridge_stats_bridge_log_field":1,"mini_apps_prevent_double_mount_event":1,"mini_apps_sdk_allow_bridge_method_dry_run":1,"cookie_secure_default_true":1,"feed_post_ads_menu_stats":1,"stickers_bot_link":1,"widgets_xdm_same_origin":1,"link_replacer_start_slash":1,"mvk_preload_entries":1,"stickers_money_transfer_suggestions":1,"mvk_mail_include_archived_messages_count":1,"web2_story_box_enabled":1,"navigation_timespent":1,"web_stats_transport_story_view":1,"registration_item_stat":1,"mute_mvk_err_peaks":1,"web_stats_send_on_events_limit":1,"batchify_web_stats":1,"open_app_bridge_event_to_api":1,"audio_unauth_preview":1,"audio_unauth_preview_box":1,"audio_mediascope":1,"audio_my_tracker_mvk":1,"mvk_navgo_xss_fix":1,"unauthorized_media_layer_box":1,"faq_clean_up_extra_spaces":1,"loginvk_api_use_anonymous_token":1,"games_pass_ref_to_wall_post":1,"remove_a_m_apps_save_stats_act":1,"mail_business_notify":1,"waf_ajax_request_enabled":1,"add_to_menu_event_to_api":1,"cookie_lite_js_save_stat":1,"mvk_waf_ajax_request_enabled":1,"notifications_events_to_api":1,"web_api_fork":1,"market_single_cart_ozon_redirect_url_encoding":1,"market_item_seller_response_time":1,"profile_enable_album_tabs":1,"owner_content_tabs_active_tab_click_transition":1,"landing_vkpay_form_prod_env":1,"single_cart_ozon_safari_disable":1,"marusia_web_music_stats":1,"profile_owner_content_tabs_settings":1,"nft_tab_show_empty":1,"personal_in_vkidacc":1,"profile_redesign_new_cover_exp":1,"web_stats_send_beacon":1,"esia_verification_status":1,"vkui_account_common_verification_mark":1,"messenger_mediascope_stats_collect":1,"ui_controls_normalize_html_entities":1,"web_stats_reduce_debounce":1,"web_stats_device_id":1,"mvk_vkapi_capture_async_stacktrace":1,"apps_games_log_xdm_errors_custom":1,"measure_module_navigation_stats":1,"sentry_js_known_issues_mvk_integration":1,"sentry_js_api_errors_mvk_integration":1,"sentry_js_static_errors_mvk_integration":1,"sentry_js_network_detections_mvk_integration":1,"sentry_js_page_snapshot_mvk_integration":1,"sentry_js_mvk_verbose":1,"sentry_js_mvk_snapshot_ls_near_limit":1,"web_inline_grouping_fix":1,"mini_apps_action_menu_mvk":1,"mini_apps_action_menu_back_button_fix_mvk_app_exit":1,"mini_apps_vote_payments_check":1,"mini_apps_disable_ios_bounce_effect":1,"mini_apps_close_app_mvk_history_fix":1,"direct_games_safari_view_controller":1,"direct_games_install_screen_safari_view_controller":1,"mvk_market_item_page_block_banner":1,"mvk_quick_search_canceled_requests_stats":1,"longread_tts_no_stream_error":1,"apps_skip_lazy_static_reload_mvk":1,"mvk_photo_stream_system_albums_to_top":1,"mvk_posting_track_event_count":1,"mvk_posting_force_carousel_mode":1,"posting_share_photo_video_options_limited_mvk":1,"posting_share_wall_media_options_limited_mvk":1,"tech_stories_metrics_web_mvk":1,"mvk_calls_calls_enabled":1,"profile_redesign_onboarding":1,"vkc_app_detection_enabled":1,"marusia_mvk_messenger":1,"marusia_send_start_session":1,"marusia_skill_list_new":1,"mvk_profile_cover_redesign":1,"react_lazy_initiator_abort_render":1,"search_enable_catalog_search_audio":1,"mobile_account_counters_queue":1,"mvk_games_history_back_on_exit":1,"clips_mvk_playlists":1,"video_showcase_mvk_continue_watch_design_fixes":1,"video_playlist_create_modal_hide_header_btn":1,"mvk_skins_legacy_base_TextInput":1,"search_video_service_catalog_video_suggester":1,"mini_apps_filter_method_params":1,"mini_apps_duplicate_recommend_modal":1,"new_hashtags_parser":1,"mini_apps_im_integration_catalog_section_web":1,"mini_apps_open_report_form_mvk":1,"search_enable_catalog_search_statuses":1,"search_disable_new_text_parser":1,"search_enable_catalog_search_clips":1,"search_enable_catalog_search_clips_service":1,"search_enable_catalog_clips_suggester":1,"search_enable_catalog_clips_service_suggester":1,"search_enable_new_design_catalog_header":1,"search_enable_catalog_group_members":1,"search_enable_catalog_group_members_actions":1,"search_enable_catalog_search_market_service":1,"media_grid_single_image_blur_enabled":1,"media_grid_with_gray_fields_enabled":1,"single_photo_backdrop_blur_enabled":1,"feed_redesign_web_mvk_grid_height_limit_enabled":1,"media_grid_fullscreen_enabled":1,"feed_secondary_attachment_audio_redesign":1,"video_player_track_onestat_errors":1,"video_player_fix_embed_webview":1,"video_player_mvk_waiting_live":1,"video_send_view_history_record":1,"video_history_record_time_send":1,"videoplayer_off_interactive_graph":1,"video_player_support_new_live_links":1,"video_player_ref_domain_embed":1,"mini_apps_ads_image_aspect_fix":1,"mini_apps_ads_disable_multiple_shows":1,"mini_apps_ads_check_focus_for_banner_update":1,"mini_apps_ads_skip_resize_on_banner_update":1,"mini_apps_ads_landscape_scroll_fix":1,"mini_apps_ads_native_ads_timeout":1,"mini_apps_ads_reward_muted":1,"mini_apps_ads_bridge_response_fix":1,"web_vitals_inp":1,"web_collect_lcp_element_resource_metrics":1,"vk_bridge_modals_horizontal_layout":1,"music_clear_media_type":1,"mini_apps_catalog_cursor_pagination":1,"audio_special_project_mvk":1,"media_focus_mvk":1,"storage_bridge_events_to_api":1,"account_verified_link":1,"logout_save_user_dialog_mvk":1,"mvk_show_follow_button_as_add":1,"stickers.ugc":1,"client_dev_null_video_uploader_errors":1,"vkid_api_formatted_execute_response":1,"mvk_sentry_js_ignore_local_erorrs":1,"mvk_feed_main_trackcode_client":1,"vk_resource_timing_stats":1,"mix_friends_followers":1,"mvk_react_router_current_stack_length_fix":1,"video_mvk_first_session_promo_ios":1,"video_mvk_first_session_promo_android":1,"video_open_in_app_promo_button_bugfix":1,"mvk_video_show_delete_video_button":1,"mini_apps_performance_web":1,"mini_apps_performance_iframe_errors":1,"mvk_apps_entrypoint":1,"feed_post_menu_stats":1,"mini_apps_profile_bridge_fix":1,"mini_apps_send_session_uuid":1,"mini_apps_collect_performance_from_sdk":1,"mini_apps_fix_double_init_bridge":1,"mini_apps_collect_sessions_from_sdk":1,"mini_apps_send_my_tracker_activity":1,"mini_apps_vkapps_allow_notifications_api":1,"games_send_track_visitor_activity":1,"games_js_sdk_use_api_mvk":1,"mini_apps_send_session_uuid_bridge_events":1,"mini_apps_parse_webview_url_for_launch_ref":1,"mini_apps_toggle_favorite_api":1,"mini_apps_performance_v2":1,"mvk_fix_popstate_nav_update":1,"mvk_spa_page_error_ratio":1,"mvk_profiler_stub_enabled":1,"mvk_catalog_section_without_vk_apps":1,"mvk_navigation_progress_bar":1,"primary_attachment_audio_component_and_services_clean_up":1,"profile_age_mark":1,"feed_secondary_attachment_audio_redesign_mvk":1,"feed_open_audio_stats_for_react":1,"video_permanent_promo_button_android":1,"video_permanent_promo_button_ios":1,"video_bookmarks_renaming_to_watch_later":1,"video_create_playlist_empty_input_bugfix":1,"mvk_keep_client_tab_id":1,"stories_mvk_sticker_template":1,"remove_stories_sticker_app":1,"users_wasm_support":1,"mvk_fix_static_manager_race_condition":1,"feed_content_events_open_mvk":1,"feed_content_events_expand_mvk":1,"feed_content_events_report_mvk":1,"profile_snowballs_mvk":1,"web_mytracker_collect_post_stats":1,"stories_mvk_best_friends":1,"feed_content_events_caption_link_click_mvk":1,"mvk_unused_skins_delete":1,"clips_publish_videos_to_clips_mvk":1,"vkm_mvk_open_chat_link":1,"vkm_check_is_mobile_in_default_act":1,"unique_adblock_users":1,"clips_support_direct_link_mvk":1,"feed_show_more_text_global_handlers_fix_mvk":1,"mvk_lite_mode_disabled":1,"clips_replace_controls_icons_mvk":1,"posting_hide_copyright_button_mvk":1,"mvk_audio_captcha_enabled":1,"collect_ttlb":1,"feed_first_page_size_initial_scroll_check":1,"group_recommended_tips_mvk_enabled":1,"clips_change_grid_title_onscroll":1,"mvk_video_app_promo_slow_yt_modal_should_track_exp_analytics":1,"mvk_remove_api_expired_token_function":1,"mvk_fix_react_navigation_time":1,"mvk_mention_events_with_inited_check":1,"special_groups_redirects":1,"groups_donut_banner_redesign":1,"clips_player_widget":1,"mvk_router_deactivate_abort_signal":1,"mvk_collect_web_app_starts":1,"web_api_fix_exception":1,"web_api_handle_network_errors":1,"mvk_page_loading_error_banner":1,"web_api_token_fetch_retry":1,"interactive_video_redesign_badge_mvk":1,"web_messenger_open_app_ref":1,"market_single_cart_ozon_mvk":1,"clips_mvk_use_mobx_state":1,"search_communities_hide_safe_search_filter_mvk":1,"hide_global_search_videoshowcase_mvk":1},"ex":[],"acl":[],"cfg":{"nft_profile_content_count":15,"short_video_pwa_notify_clips_threshold":3,"short_video_pwa_notify_retry_after":14,"short_video_publish_video_to_clips_duration_min":1,"short_video_publish_video_to_clips_duration_max":60,"clips_encode_progress_delay":3000,"clips_encode_progress_attempts":800,"special_subdomains_groups":[[-224318634,"test-sub-host","test_test_7777"],[-226270912,"specialdomaingroup","club226270912"],[-29809500,"sportmailru","sportmailru"]],"mvk_a11y_coverage_downlink_bandwidth":5,"sentry_dsn":["75b6a20df0014dbc8cf4d074eeeea6c5",27],"mvk_a11y_coverage_hash_prefixes":["tab-PUldVA","upload_image_","fXD"],"videoplayer_history_record_watch_time":25,"statlogs_cookie_size_limit":3500,"vk_metric_record_max_number":0,"langs_force_version":1,"vk_resource_compression_map":{"domain":{"userapi.com":"5","vk.com":"1"},"type":{"audio":"5","beacon":"11","css":"2","early-hints":"4","fetch":"7","iframe":"8","image":"12","img":"6","link":"1","navigation":"10","other":"13","script":"3","xmlhttprequest":"9"}}},"audioAdsConfig":{"_":"_"}};
+        window.isMVK = true;
+        window.audioSubscribe = false;
+        window.isArticleWebView = false;
+
+        var vkElem = document.querySelector('.vk');
+        var vkClass = vkElem.getAttribute('class');
+
+        function isSchemesSupported() {
+          return window.CSS &&
+            CSS.supports &&
+            CSS.supports('color', 'var(--custom-property)');
+        }
+
+        function cssPropertySupported(pNames) {
+          var element = document.createElement('a');
+          var index = pNames.length;
+          try {
+            while (index--) {
+              var name = pNames[index];
+
+              element.style.display = name;
+              if (element.style.display === name) {
+                return true;
+              }
+            }
+          } catch (pError) {}
+
+          return false;
+        }
+        var supports = {
+          js: true,
+          flex: cssPropertySupported('flex -webkit-flex -ms-flexbox -moz-box -webkit-box'.split(' ')),
+          schemes: isSchemesSupported()
+        };
+
+        supports.schemes && (vkClass = vkClass.replace('vk_schemes_no', 'vk_schemes_yes'));
+        supports.js && (vkClass = vkClass.replace('vk_js_no', 'vk_js_yes'));
+        supports.flex && (vkClass = vkClass.replace('vk_flex_no', 'vk_flex_yes'));
+        vkElem.setAttribute('class', vkClass);
+      })();
+    </script>
+
+    
+    <script type="text/javascript">
+<!--
+;/*top_script*/
+(function () {
+  'use strict';
+
+  const isCSSVariablesSupported = ()=>Boolean(window.CSS && CSS.supports && CSS.supports('color', 'var(--custom-property)'));
+  const isMatchMediaSupported = ()=>Boolean(window.matchMedia);
+  const isFlexboxSupported = ()=>document.documentElement.classList.contains('vk_flex_yes');
+  const isSupportsSupported = ()=>Boolean(window.CSS && CSS.supports);
+  const isGridsSupported = ()=>Boolean(typeof document.createElement('div').style.grid === 'string');
+  const isSVGSupported = ()=>Boolean(document.createElementNS) && Boolean(document.createElementNS('http://www.w3.org/2000/svg', 'svg').createSVGRect);
+  const isMutationObserverSupported = ()=>'MutationObserver' in window;
+  function isLogicalAssignmentSupported() {
+      try {
+          new Function('var v;v||=1')();
+      } catch (err) {
+          return false;
+      }
+      return true;
+  }
+  const isJsModulesSupported = ()=>!window.nomodules;
+  const isES2020supported = ()=>Boolean(String.prototype.matchAll);
+  let _isES2021supported = null;
+  function isES2021supported() {
+      if (!_isES2021supported) {
+          // ES2021 РІРєР»СЋС‡Р°РµС‚ РІ СЃРµР±СЏ logical assignment. РЎР°С„Р°СЂРё РїРѕРґРґРµСЂР¶Р°Р» ES2021 РІ 13 РІРµСЂСЃРёРё, РЅРѕ Logical Assignment РІ РЅРµРµ РЅРµ РїРѕРїР°Р»
+          _isES2021supported = Boolean(String.prototype.replaceAll) && isLogicalAssignmentSupported();
+      }
+      return _isES2021supported;
+  }
+  const isES2022supported = ()=>Boolean(Object.hasOwn);
+
+  function top_script(params) {
+      deviceInfoDetector(params);
+      window.deferStaticEntries = params.defer_static;
+      if (params.al_ver) {
+          window.al = {
+              ver: params.al_ver
+          };
+      }
+      window._preventEvents = [
+          'click',
+          'touchstart',
+          'touchend',
+          'mouseover',
+          'mousemove'
+      ];
+      window._preventPointerEventsElement = document.createElement('style');
+      window._preventPointerEventsElement.innerHTML = window._preventEvents.map((event)=>`[on${event}]`).join(', ') + ', a, button, input' + ' { pointer-events: none; }';
+      document.head.insertAdjacentElement('afterbegin', window._preventPointerEventsElement);
+      window._onloadDeferCallbacks = [];
+      // РµСЃР»Рё СЂРµСЃР°Р№Р· РїСЂРѕРёР·РѕР№РґРµС‚ РґРѕ Р·Р°РіСЂСѓР·РєРё РїСЂРѕРєСЃРё, Р±СѓРґРµС‚ РјРЅРѕР¶РµСЃС‚РІРѕ РѕС€РёР±РѕРє
+      window.onBodyResize = ()=>{};
+      // РІ РїРѕСЃР»РµРґРЅРµРµ РІСЂРµРјСЏ СЃС‚Р°Р» СЃРёР»СЊРЅРѕ С„РѕРЅРёС‚СЊ РѕРЅСЃРєСЂРѕР»Р» РјРµСЃСЃРµРЅРґР¶РµСЂР°. РРЅР»Р°Р№РЅ РѕР±СЂР°Р±РѕС‚С‡РёРє, РєРѕС‚РѕСЂС‹Р№ РЅРµ РїСЂРµРІРµРЅС‚РёС‚СЃСЏ
+      // Рё РЅРµ СѓСЃРїРµРІР°РµС‚ Р·Р°РїСЂРѕРєСЃРёСЂРѕРІР°С‚СЊСЃСЏ РЅР° РјРµРґР»РµРЅРЅРѕРј РёРЅС‚РµСЂРЅРµС‚Рµ. РЎР°РјС‹Р№ РґРµС€РµРІС‹Р№ СЃРїРѕСЃРѕР± РµРіРѕ СѓСЃРїРѕРєРѕРёС‚СЊ - Р·Р°РіР»СѓС€РєР° РЅРёР¶Рµ
+      // РЈР±СЂР°С‚СЊ РєРѕРіРґР° РјРµСЃСЃРµРЅРґР¶РµСЂ РЅР° РјРІРє РЅР°С‡РЅРµС‚ РїРѕРґРґРµСЂР¶РёРІР°С‚СЊСЃСЏ
+      window.Messenger = {
+          _onMainScroll: ()=>{},
+          _onConvoScroll: ()=>{}
+      };
+      // bootstrap
+      window.cur = {
+          destroy: []
+      };
+      window.lang = {};
+      window.extend = function() {
+          const args = Array.prototype.slice.call(arguments);
+          const obj = args.shift();
+          if (!args.length) {
+              return {
+                  obj
+              };
+          }
+          for(let i = 0, l = args.length; i < l; i++){
+              for(const key in args[i]){
+                  if (key === 'layerX' || key === 'layerY') {
+                      continue;
+                  }
+                  obj[key] = args[i][key];
+              }
+          }
+          return obj;
+      };
+      window.onDomReady = (callback)=>{
+          if (window.document.readyState === 'loading') {
+              window.document.addEventListener('DOMContentLoaded', ()=>callback(), {
+                  once: true
+              });
+              return;
+          }
+          callback();
+      };
+      window.onDOMReady = window.onDomReady;
+      window.onloadDeferStatic = (fn, force = false)=>{
+          if (force === true) {
+              fn();
+          } else if (window.deferStaticEntries.length > 0) {
+              window._onloadDeferCallbacks.push(()=>{
+                  fn();
+              });
+          } else {
+              window.onDomReady(()=>{
+                  fn();
+              });
+          }
+      };
+      /**
+     * РћР±РѕСЂР°С‡РёРІР°РµС‚ РёРЅР»Р°Р№РЅ РєРѕРґ, С‡С‚РѕР±С‹ РІ СЃР»СѓС‡Р°Рµ РѕС€РёР±РєРё РїРѕРЅСЏС‚СЊ РјРµСЃС‚Рѕ, РІ РєРѕС‚РѕСЂРѕРј СЌС‚РѕС‚ РєРѕРґ Р±С‹Р» РґРѕР±Р°РІР»РµРЅ.
+     * Р’РѕР·РјРѕР¶РЅРѕ, СЃС‚РѕРёС‚ СЃРґРµР»Р°С‚СЊ Р±РѕР»РµРµ С‡РёСЃС‚РѕРµ РѕР±РѕСЂР°С‡РёРІР°РЅРёРµ. Р­С‚РѕС‚ РєРѕРґ РґРѕР±Р°РІР»РµРЅ РґР»СЏ РёСЃРїСЂР°РІР»РµРЅРёСЏ С‚РµРєСѓС‰РµРіРѕ С„РѕРЅР°.
+     */ window.taggedInline = (name, cb)=>{
+          window.__inline_tag = name;
+          try {
+              cb();
+          } catch (e) {
+              throw e;
+          } finally{
+              delete window.__inline_tag;
+          }
+      };
+      // РЎР°РјС‹Рµ РЅРµРѕР±С…РѕРґРёРјС‹Рµ РїРѕР»РёС„РёР»С‹. РћСЃС‚Р°Р»СЊРЅС‹Рµ вЂ” РІ polyfills.js
+      if (window.NodeList && !NodeList.prototype.forEach) {
+          NodeList.prototype.forEach = Array.prototype.forEach;
+      }
+      window.onStaticLoadFailed = function notifyScriptBroken(el) {
+          if (!el || !('sendBeacon' in navigator)) {
+              return;
+          }
+          navigator.sendBeacon('/?act=broken_static_log', new URLSearchParams({
+              type: el.tagName === 'SCRIPT' ? 'script' : 'style',
+              src: el.src || el.href,
+              visibility: document.visibilityState,
+              href: location.href
+          }));
+      };
+      function detectHighestEcmaVersion() {
+          const ecmaDetectors = [
+              isES2022supported,
+              isES2021supported,
+              isES2020supported
+          ];
+          const ecmaVersions = [
+              'es2022',
+              'es2021',
+              'es2020'
+          ];
+          for(let i = 0; i < ecmaDetectors.length; i++){
+              if (ecmaDetectors[i]()) {
+                  return ecmaVersions[i];
+              }
+          }
+          return '< es2022';
+      }
+      window.highestEcmaSupported = detectHighestEcmaVersion();
+  }
+  function deviceInfoDetector({ iospwa_cookie, device_cookie, cookie_secure, cookie_samesite, cookie_path, cookie_domain, need_reload }) {
+      const expires = new Date(new Date().getTime() + 7776e6).toUTCString();
+      if (navigator.standalone === true && document.cookie.indexOf(`${iospwa_cookie}=1`) === -1) {
+          document.cookie = `${iospwa_cookie}=1; expires=${expires};${cookie_secure}${cookie_samesite} path=${cookie_path}; domain=${cookie_domain}`;
+      }
+      const doc = document;
+      const win = window;
+      const typeUndef = 'undefined';
+      const supportSign = '!';
+      const noSupportSign = '-';
+      const screen /* c */  = win.screen;
+      const width /* g */  = screen.width || 0;
+      const height /* c */  = screen.height || 0;
+      const dpr /* n */  = win.devicePixelRatio || 1;
+      const innerWidth = win.innerWidth || 0;
+      const cookieReg = new RegExp(`(^|;\\s+)${device_cookie}=([^;]+)`);
+      const cookieMatched /* p */  = (doc.cookie.match(cookieReg) || [])[2] || '';
+      const parts /* h */  = cookieMatched.split('/');
+      const DETECTION_COOKIE_LENGTH = 11;
+      const isCookieValid = cookieMatched && width == parts[0] && height == parts[1] && dpr == parts[2] && parts[3].length === DETECTION_COOKIE_LENGTH;
+      const savedVKUISupportCheck = isCookieValid ? parts[3][8] : false;
+      const makeCookieRewrite = savedVKUISupportCheck === noSupportSign && checkVKUISupport() !== savedVKUISupportCheck;
+      const updateInnerWidthOnly = isCookieValid && !makeCookieRewrite && innerWidth != parts[4];
+      if (!isCookieValid || makeCookieRewrite || updateInnerWidthOnly) {
+          const detected /* g */  = [
+              width,
+              height,
+              dpr,
+              doDetect(),
+              innerWidth
+          ].join('/');
+          doc.cookie = `${device_cookie}=; expires=${new Date(0).toUTCString()};${cookie_secure}${cookie_samesite} path=${cookie_path}`;
+          doc.cookie = `${device_cookie}=${detected}; expires=${expires};${cookie_secure}${cookie_samesite} path=${cookie_path}; domain=${cookie_domain}`;
+          if (!updateInnerWidthOnly && doc.cookie !== '' && need_reload) {
+              location.reload();
+          }
+      }
+      function checkVKUISupport() {
+          const supports = isFlexboxSupported() && isMatchMediaSupported() && isSVGSupported() && isMutationObserverSupported();
+          return supports ? supportSign : noSupportSign;
+      }
+      function checkModernCssSupport() {
+          // TODO: Check possibility to replace with VKUI support or jsModules support
+          const supports = isFlexboxSupported() && isMatchMediaSupported() && isCSSVariablesSupported() && isSupportsSupported() && isGridsSupported() && isSVGSupported();
+          return supports ? supportSign : noSupportSign;
+      }
+      function doDetect() {
+          const supportsXhr /* c */  = function() {
+              let supports;
+              try {
+                  // eslint-disable-next-line no-restricted-globals
+                  supports = new XMLHttpRequest();
+              } catch (a) {
+                  try {
+                      supports = new ActiveXObject('Msxml2.XMLHTTP');
+                  } catch (err1) {
+                      try {
+                          supports = new ActiveXObject('Microsoft.XMLHTTP');
+                      } catch (err2) {}
+                  }
+              }
+              return supports ? supportSign : noSupportSign;
+          }();
+          const supportsFile /* g */  = function() {
+              let elem = doc.createElement('div');
+              elem.innerHTML = '<input type="file" />';
+              elem = elem.getElementsByTagName('input')[0];
+              return 'file' !== elem.type || elem.disabled ? noSupportSign : supportSign;
+          }();
+          const supportsTouch /* h */  = 'ontouchstart' in win ? supportSign : noSupportSign;
+          let supportsGeo /* m */  = noSupportSign;
+          try {
+              if (typeof navigator.geolocation !== typeUndef) {
+                  supportsGeo = supportSign;
+              } else if (typeof win.google !== typeUndef && typeof google.gears !== typeUndef) {
+                  supportsGeo = supportSign;
+              } else if (typeof device !== typeUndef && typeof device.getServiceObject !== typeUndef) {
+                  supportsGeo = supportSign;
+              } else if (typeof Mojo !== typeUndef && typeof Mojo.Service.Request !== 'Mojo.Service.Request') {
+                  supportsGeo = supportSign;
+              }
+          } catch (e) {}
+          const supportsAudioMpeg /* l */  = function(mimeType) {
+              try {
+                  const audio = win.Audio ? new Audio() : doc.createElement('audio');
+                  if (audio.canPlayType && audio.canPlayType(mimeType) && 'no' !== audio.canPlayType(mimeType)) {
+                      return supportSign;
+                  }
+              } catch (e) {}
+              return noSupportSign;
+          }('audio/mpeg');
+          const supportsTransform /* n */  = function(transform /* b */ ) {
+              try {
+                  const elem /* a */  = doc.createElement('div');
+                  const prefixes /* g */  = [
+                      '',
+                      'webkit',
+                      'Moz',
+                      'ms',
+                      'O'
+                  ];
+                  for(let i /* c */  = 0, len /* h */  = prefixes.length; i < len; i++){
+                      const prefix = prefixes[i];
+                      const prop = prefix ? prefix + transform : transform.toLowerCase();
+                      if (typeof elem.style[prop] !== typeUndef) {
+                          return supportSign;
+                      }
+                  }
+                  return noSupportSign;
+              } catch (e) {
+                  return noSupportSign;
+              }
+          }('Transform');
+          const supportsFileAPI = function() {
+              if ((win.XMLHttpRequest || win.XDomainRequest) && (win.FormData || win.FileReader && (win.XMLHttpRequest && XMLHttpRequest.sendAsBinary || win.ArrayBuffer && win.Uint8Array && (win.MozBlobBuilder || win.WebKitBlobBuilder || win.BlobBuilder)))) {
+                  return supportSign;
+              }
+              return noSupportSign;
+          }();
+          const supportsJSModules = isJsModulesSupported() ? supportSign : noSupportSign;
+          const supportsVKUI = checkVKUISupport();
+          const supportsModernCss = checkModernCssSupport();
+          const supportsES2021 = isES2021supported() ? supportSign : noSupportSign;
+          return [
+              supportsXhr,
+              supportsFile,
+              supportsTouch,
+              supportsGeo,
+              supportsAudioMpeg,
+              supportsTransform,
+              supportsFileAPI,
+              supportsJSModules,
+              supportsVKUI,
+              supportsES2021,
+              supportsModernCss
+          ].join('');
+      }
+  }
+
+  return top_script;
+
+})()({"device_cookie":"remixmdevice","iospwa_cookie":"remixmiospwa","cookie_path":"\/","cookie_domain":".vk.com","cookie_samesite":"","cookie_secure":" Secure;","need_reload":true,"defer_static":[],"al_ver":""});;/*flush_controller*/
+(function () {
+  'use strict';
+
+  (function() {
+      const frag = document.createDocumentFragment();
+      const elem = document.createElement('div');
+      const range = document.createRange();
+      frag.appendChild(elem);
+      range.selectNodeContents(elem);
+      window.cdf = function cdf(html) {
+          if (!html) return document.createDocumentFragment();
+          return range.createContextualFragment(html);
+      };
+  })();
+  function addBodyAttributes(attrsObj) {
+      for(const key in attrsObj){
+          if (attrsObj.hasOwnProperty(key)) {
+              if (document.body.hasAttribute(key) && key === 'class') {
+                  document.body.setAttribute(key, document.body.getAttribute(key) + ' ' + attrsObj[key]);
+              } else {
+                  document.body.setAttribute(key, attrsObj[key]);
+              }
+          }
+      }
+  }
+  function removeSkeletonLayout() {
+      const layoutEl = document.querySelector('.layout--flush');
+      if (layoutEl) {
+          layoutEl.remove();
+      }
+  }
+  function appendSkeletonToLayout() {
+      const el = document.getElementById('flush_skeleton_container');
+      const mcont = document.getElementById('mcont');
+      mcont.appendChild(el);
+      el.style.display = 'block';
+      const progressBarLine = document.getElementById('head-progress-bar');
+      if (progressBarLine) {
+          progressBarLine.style.transform = 'translate(30%)';
+      }
+  }
+  function processFlushHeadPartInsert(value) {
+      const html = new DOMParser().parseFromString(value, 'text/html').body.innerText;
+      const headFrag = window.cdf(html);
+      document.head.appendChild(headFrag);
+  }
+  function processComments() {
+      Array.from(document.body.childNodes).forEach((node)=>{
+          if (node.nodeType === 8 && node.nodeValue) {
+              const parts = node.nodeValue.split(':');
+              const value = parts.slice(1).join(':');
+              switch(parts[0]){
+                  case 'flush_head_part_insert':
+                      processFlushHeadPartInsert(value);
+                      node.remove();
+                      break;
+              }
+          }
+      });
+  }
+  function onFlushFinish() {
+      delete window.FlushController;
+  }
+  // eslint-disable-next-line no-restricted-syntax
+  function initFlushController() {
+      window.FlushController = {
+          addBodyAttributes,
+          removeSkeletonLayout,
+          processComments,
+          appendSkeletonToLayout
+      };
+      document.addEventListener('DOMContentLoaded', ()=>{
+          onFlushFinish();
+      });
+  }
+
+  return initFlushController;
+
+})()([]);
+//-->
+</script>
+    
+<link rel="preload" href="https://st7-23.vk.com/css/fonts/VKSansDisplayDemiBoldFaux.v100.woff2" as="font" type="font/woff2" crossorigin/>
+    <!--defer:["variables.css","BadBrowser.css","vk_sans_display_faux.css","vk_sans_display.css"]-->
+<!--async:["grip.js"]-->
+<script src="https://st7-23.vk.com/dist/mobile/runtime.72f8f6de6031696b6f6c.js" onerror="window.onStaticLoadFailed && window.onStaticLoadFailed(this)"></script>
+<script src="https://st7-23.vk.com/dist/mobile/vendors.efdfbf0ddb12cf2592b4.js" onerror="window.onStaticLoadFailed && window.onStaticLoadFailed(this)"></script>
+<script src="https://st7-23.vk.com/dist/mobile/vendors~sentry.203e7b566ef4abf59702.js" onerror="window.onStaticLoadFailed && window.onStaticLoadFailed(this)"></script>
+<script src="https://st7-23.vk.com/dist/mobile/b-5b00aea572e45c70bbebccd522bc0f0e.6da97a374bc5c386d54b.js" onerror="window.onStaticLoadFailed && window.onStaticLoadFailed(this)"></script>
+<script src="https://st7-23.vk.com/dist/mobile/polyfills.12f059a63394e7664c29.js" onerror="window.onStaticLoadFailed && window.onStaticLoadFailed(this)"></script>
+<script src="https://st7-23.vk.com/dist/mobile/vendors~vkjs.340a919cd27e60df5f77.js" onerror="window.onStaticLoadFailed && window.onStaticLoadFailed(this)"></script>
+<script src="https://st7-23.vk.com/dist/mobile/vendors~eventemitter.f79c689caa23f8c556a6.js" onerror="window.onStaticLoadFailed && window.onStaticLoadFailed(this)"></script>
+<script src="https://st7-23.vk.com/dist/mobile/b-077bca6f491ed9ece107680a7718b4db.a117d4e205c06b69b7e3.js" onerror="window.onStaticLoadFailed && window.onStaticLoadFailed(this)"></script>
+<script src="https://st7-23.vk.com/dist/mobile/b-ceaa9315a32960f26bfe1bd3f4da9134.d0ca48a36299e376332e.js" onerror="window.onStaticLoadFailed && window.onStaticLoadFailed(this)"></script>
+<script src="https://st7-23.vk.com/dist/mobile/window_proxy.1d43616fb6bbd0321b1f.js" onerror="window.onStaticLoadFailed && window.onStaticLoadFailed(this)"></script>
+<script src="https://st7-23.vk.com/dist/mobile/vk_sans_observer.83f59d98a565f2bda818.js" onerror="window.onStaticLoadFailed && window.onStaticLoadFailed(this)"></script>
+
+    <link rel="canonical" href="https://vk.com/video366334201_456244015" />
+    <link rel="alternate" href="android-app://com.vkontakte.android/vkontakte/m.vk.com/video366334201_456244015" />
+</head><body  class="vk__page _hover vk_ios_no vk_stickers_hints_support_no opera_mini_no vk_safari_no bad_browser_page_fast_reload vk_tabbar_bottom  vk_tabbar_hidden   vk_al_no vk_mode_regular">
+  <div class="HeadProgressbar" id="head-progress-bar-container" style="visibility: hidden"><div class="HeadProgressbar__progress" style="transform: translate(0%)" id="head-progress-bar"><div></div></div></div>
+  <script id="color-scheme-script" type="text/javascript">
+<!--
+;/*body*/
+(function () {
+  'use strict';
+
+  function body({ colorSchemeMode, isForcedColorSchemeMode, isDarkSchemeGuideHidden, colorSchemesMap }) {
+      const isSchemesSupported = ()=>{
+          return window.CSS && CSS.supports && CSS.supports('color', 'var(--custom-property)');
+      };
+      function initBasicColorScheme(mode, schemesMap) {
+          const ColorSchemeMode = {
+              Light: 'light',
+              Dark: 'dark',
+              Auto: 'auto'
+          };
+          const ColorSchemeName = {
+              Dark: 'space_gray',
+              Light: 'bright_light'
+          };
+          const SchemeColors = {
+              Dark: '#222222',
+              Light: '#ffffff'
+          };
+          const colorScheme = {
+              isSchemesAutoSwitchingSupported () {
+                  return window.matchMedia && window.matchMedia('(prefers-color-scheme)').matches;
+              },
+              applyScheme (element, schemeKey) {
+                  const scheme = (schemesMap == null ? void 0 : schemesMap[schemeKey]) || schemeKey;
+                  element.setAttribute('scheme', scheme);
+              },
+              setScheme (isDark) {
+                  var _document_querySelector, _document_querySelector1;
+                  if (!isSchemesSupported()) {
+                      return;
+                  }
+                  this.applyScheme(document.body, isDark ? ColorSchemeName.Dark : ColorSchemeName.Light);
+                  (_document_querySelector = document.querySelector('meta[name=theme-color]')) == null ? void 0 : _document_querySelector.setAttribute('content', isDark ? SchemeColors.Dark : SchemeColors.Light);
+                  (_document_querySelector1 = document.querySelector('meta[name=color-scheme]')) == null ? void 0 : _document_querySelector1.setAttribute('content', isDark ? 'dark' : 'light');
+              },
+              setMode () {
+                  let isDark = false;
+                  switch(mode){
+                      case ColorSchemeMode.Light:
+                          {
+                              isDark = false;
+                              break;
+                          }
+                      case ColorSchemeMode.Dark:
+                          {
+                              isDark = true;
+                              break;
+                          }
+                      case ColorSchemeMode.Auto:
+                          {
+                              if (this.isSchemesAutoSwitchingSupported()) {
+                                  const mql = window.matchMedia('(prefers-color-scheme: dark)');
+                                  isDark = mql.matches;
+                              } else {
+                                  mode = ColorSchemeMode.Light;
+                              }
+                              break;
+                          }
+                  }
+                  this.setScheme(isDark);
+              }
+          };
+          colorScheme.setMode();
+      }
+      let resultColorSchemeMode = colorSchemeMode;
+      let isModeSavingAllowed = true;
+      try {
+          const sessionsColorSchemeMode = sessionStorage.getItem('colorScheme');
+          if (sessionsColorSchemeMode) {
+              resultColorSchemeMode = sessionsColorSchemeMode;
+              isModeSavingAllowed = false;
+              if (window.colorScheme) {
+                  window.colorScheme.isModeSavingAllowed = false;
+              }
+          }
+          if (isForcedColorSchemeMode) {
+              resultColorSchemeMode = colorSchemeMode;
+              isModeSavingAllowed = false;
+              if (window.colorScheme) {
+                  window.colorScheme.isModeSavingAllowed = false;
+              }
+              sessionStorage.setItem('colorScheme', colorSchemeMode);
+          }
+      } catch (e) {}
+      if (window.colorScheme) {
+          window.colorScheme.init({
+              mode: resultColorSchemeMode,
+              schemesMap: colorSchemesMap
+          });
+      } else {
+          window.colorSchemeInit = {
+              mode: resultColorSchemeMode,
+              schemesMap: colorSchemesMap
+          };
+          window.colorSchemeInitIsModeSavingAllowed = isModeSavingAllowed;
+          initBasicColorScheme(resultColorSchemeMode, colorSchemesMap);
+      }
+      const thisScript = document.getElementById('color-scheme-script');
+      thisScript.parentNode.removeChild(thisScript);
+  }
+
+  return body;
+
+})()({"colorSchemeMode":"auto","isForcedColorSchemeMode":false,"colorSchemesMap":null});
+//-->
+</script>
+  
+  <div style="position: absolute; left: -9999; top: 0; height: 0; width: 0; overflow: hidden;">
+<svg class="NftAvatar__asset" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" fill="currentColor" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="nftMountBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop stop-color="#2EE6A8"/>
+      <stop offset="0.34375" stop-color="#3399FF" />
+      <stop offset="0.692708" stop-color="#9933FF" />
+      <stop offset="1" stop-color="#FF3399"/>
+    </linearGradient>
+    <clipPath id="nftClipMask" clipPathUnits="objectBoundingBox">
+      <path d="M0.314,0.034 A0.118,0.118,0,0,1,0.428,0.004 l0.382,0.102 a0.118,0.118,0,0,1,0.083,0.083 l0.102,0.382 a0.118,0.118,0,0,1,-0.03,0.114 L0.686,0.966 a0.118,0.118,0,0,1,-0.114,0.03 l-0.382,-0.102 a0.118,0.118,0,0,1,-0.083,-0.083 L0.004,0.428 a0.118,0.118,0,0,1,0.03,-0.114 L0.314,0.034"/>
+    </clipPath>
+    <clipPath id="decorationNftClip56">
+      <path d="M17.6397 2.85774C19.4081 1.08936 21.9855 0.398735 24.4012 1.046L44.5937 6.45657C47.0093 7.10384 48.8962 8.99068 49.5434 11.4063L54.954 31.5988C55.6013 34.0145 54.9106 36.5919 53.1423 38.3603L38.3603 53.1423C36.5919 54.9106 34.0145 55.6013 31.5988 54.954L11.4063 49.5434C8.99068 48.8962 7.10384 47.0093 6.45657 44.5937L1.04601 24.4012C0.398735 21.9855 1.08936 19.4081 2.85774 17.6397L17.6397 2.85774"/>
+    </clipPath>
+    <clipPath id="decorationNftClip64">
+      <path d="M20.5679 2.85774C22.3363 1.08936 24.9137 0.398735 27.3294 1.046L51.5219 7.52837C53.9375 8.17564 55.8244 10.0625 56.4716 12.4781L62.954 36.6706C63.6013 39.0863 62.9106 41.6637 61.1423 43.4321L43.4321 61.1423C41.6637 62.9106 39.0863 63.6013 36.6706 62.954L12.4781 56.4716C10.0625 55.8244 8.17564 53.9375 7.52837 51.5219L1.04601 27.3294C0.398735 24.9137 1.08936 22.3363 2.85774 20.5679L20.5679 2.85774"/>
+    </clipPath>
+    <mask id="decorationNftMask60">
+      <rect fill="white" x="0" y="0" width="100%" height="100%" />
+      <path fill="black" d="M 21.1038 4.8577 C 22.8722 3.0894 25.4496 2.3987 27.8653 3.046 L 50.0578 8.9925 C 52.4734 9.6397 54.3603 11.5266 55.0075 13.9422 L 60.954 36.1347 C 61.6013 38.5504 60.9106 41.1278 59.1423 42.8962 L 42.8962 59.1423 C 41.1278 60.9106 38.5504 61.6013 36.1347 60.954 L 13.9422 55.0075 C 11.5266 54.3603 9.6397 52.4734 8.9925 50.0578 L 3.046 27.8653 C 2.3987 25.4496 3.0894 22.8722 4.8577 21.1038 L 21.1038 4.8577"/>
+    </mask>
+    <clipPath id="decorationCircleClip64">
+      <path d="
+        M 32 0
+        a 32 32 0 0 1 0 64
+        a 32 32 0 0 1 0 -64
+        v 2
+        a 30 30 0 0 0 0 60
+        a 30 30 0 0 0 0 -60
+      "/>
+    </clipPath>
+  </defs>
+  <path vector-effect="non-scaling-stroke" paint-order="fill" id="nftMount" d="M31.434 3.447A11.77 11.77 0 0 1 42.802.401l38.23 10.244a11.77 11.77 0 0 1 8.323 8.322l10.244 38.23a11.77 11.77 0 0 1-3.046 11.369L68.566 96.553a11.77 11.77 0 0 1-11.368 3.046l-38.23-10.244a11.77 11.77 0 0 1-8.323-8.322L.401 42.803a11.77 11.77 0 0 1 3.046-11.369L31.434 3.447Z"/>
+</svg>
+</div>
+  <div class="BadBrowserHeader"><div class="BadBrowserHeader__inner"><a href="/"><img class="BadBrowserHeader__logo" srcSet="/images/mobile/icons/vk_logo_color_32_2x.png 2x" src="/images/mobile/icons/vk_logo_color_32.png" alt="VK" /></a></div></div><div class="BadBrowser"><div class="BadBrowser__content"><h1 class="BadBrowser__title">Ваш браузер устарел</h1><p class="BadBrowser__text">Из-за этого ВКонтакте может работать медленно и нестабильно.<br/> Обновите свой браузер или установите один из рекомендуемых:</p><div class="BadBrowser__browsers"><div class="BadBrowser__browsersTable"><div class="BadBrowser__browsersTableCell"><button class="Browser" onClick="ajax.post(&#39;/bad_browser.php&#39;, { act: &#39;stats&#39;, clicked_browser: &#39;opera&#39; })" type="button" aria-label="Opera"><img class="Browser__image" src="https://sun7-18.userapi.com/ZdV8d-XHc_5GsnwSSBvJSCZ7Dv5TUEdZuQILrw/dTxtHF9uF1M.png" srcSet="https://sun7-23.userapi.com/kH8RLj3loZ1exlWJIr4kTGG1Fo5JWNPWRp_-zg/5E7DNC0LZms.png 2x" alt="Opera" /><p class="Browser__title">Opera</p></button></div><div class="BadBrowser__browsersTableCell"><button class="Browser" onClick="ajax.post(&#39;/bad_browser.php&#39;, { act: &#39;stats&#39;, clicked_browser: &#39;firefox&#39; })" type="button" aria-label="Firefox"><img class="Browser__image" src="https://sun7-18.userapi.com/6DD0xSghpEY4ZOnSoOQGo5hvOqZld01WrEb-dA/I-cI-hyWOi0.png" srcSet="https://sun7-23.userapi.com/m_nGlwXl8BfbuPxJLWz8P8KUIzS_5xDn7_fYYA/NgOj9_4a5RU.png 2x" alt="Firefox" /><p class="Browser__title">Firefox</p></button></div></div></div></div></div>
+  
+  <noscript><img style='display: none' src='/?act=no_js&hash=927d8d5f867b7e7d71' /></noscript>
+  <script type="text/javascript">
+<!--
+onloadDeferStatic(function(){parent&&parent!=window&&(document.body.innerHTML='');try {window.store.stickers = {"url_template":"https:\/\/vk.com\/sticker\/1-%id%-%size%"}}catch(e){};(function (d, w, id) {
+  if (d.getElementById(id)) return;
+  var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
+  ts.src = "https://top-fwz1.mail.ru/js/code.js";
+  var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+  if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+})(document, window, "tmr-code");}, false);
+//-->
+</script>
+  <div id="vk_utils"></div>
+  <div id="z"></div>
+  <div id="MediaView_container"></div>
+  <div id="vk_bottom"></div>
+  <div id="theme_color_shim"></div>
+  
+  
+</body>
