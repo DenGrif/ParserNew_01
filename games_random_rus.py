@@ -2,7 +2,6 @@ import requests
 from bs4 import BeautifulSoup
 from googletrans import Translator
 
-# Создаем экземпляр Translator для перевода
 translator = Translator()
 
 
@@ -16,7 +15,7 @@ def get_english_words():
         english_words = soup.find("div", id="random_word").text.strip()
         word_definitionid = soup.find("div", id="random_word_definition").text.strip()
 
-        # Переводим слово и его определение на русский
+        # Переводим
         russian_word = translator.translate(english_words, dest="ru").text
         russian_definition = translator.translate(word_definitionid, dest="ru").text
 
@@ -44,7 +43,7 @@ def word_game():
         russian_word = word_dict.get("russian_word")
         russian_definition = word_dict.get("russian_definition")
 
-        # Выводим перевод на русский
+        # Выводим перевод
         print(f"Значение слова - {russian_definition}")
         user = input("Что это за слово (ответ на русском)? ")
 
